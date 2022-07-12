@@ -1,0 +1,260 @@
+html, body {
+    font: normal 14px Segoe UI;
+    margin: 0;
+    padding: 0;
+}
+
+div { }
+
+.mycheckBig input {
+    height: 12px;
+    width: 12px;
+}
+
+.TdSol {
+    padding: 2px;
+    width: 150px;
+}
+
+.TdSolZorunlu {
+    border: 1px solid black;
+    color: red;
+    padding: 2px;
+}
+
+.TdSag { padding: 2px; }
+
+.TdOrtala { padding: 2px; }
+
+/* Header */
+
+.headerPane {
+    background-color: #EDEDED;
+    background-position: left top;
+    background-repeat: no-repeat;
+    font-family: Tahoma;
+}
+
+.headerPane .headerTop { height: 45px; }
+
+.templateTitle {
+    float: left;
+    margin-left: 15px;
+    margin-top: 11px;
+}
+
+.templateTitle a {
+    color: black;
+    font-size: x-large;
+    text-decoration: none;
+}
+
+.loginControl {
+    float: right;
+    font-size: 12px;
+    margin-right: 25px;
+    margin-top: 17px;
+}
+
+.loginControl a {
+    border-bottom: dashed 1px black;
+    color: black;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.headerMenu { margin-top: 11px; }
+
+
+/* Footer */
+
+.footerPane {
+    background-color: #EDEDED;
+    height: 100%;
+}
+
+.footerMenu {
+    float: right;
+    padding-top: 7px;
+}
+
+.copyright {
+    float: left;
+    margin-left: 15px;
+    margin-top: 100px;
+}
+
+.content { padding: 5px; }
+
+
+/* Account contentPane
+.accountHeader h2 {
+    margin: 10px 0 7px 0;
+    font-size: 16px;
+}
+
+.accountHeader p {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.accountHeader {
+    margin-bottom: 20px;
+}
+
+.form-field {
+    margin-bottom: 8px;
+}
+
+
+/* iOS */
+
+.dxsplVSeparator_iOS,
+.dxsplHSeparator_iOS { border-width: 0px !important; }
+
+.dxsplPane_iOS.leftPane,
+.dxsplPane_iOS.rightPane,
+.dxsplPane_iOS.contentPane { border-width: 1px !important; }
+
+.dxsplControl_iOS .templateTitle { margin-top: 3px; }
+
+.dxsplControl_iOS .templateTitle a {
+    color: #303030;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.dxsplControl_iOS .headerTop,
+.dxsplControl_iOS .content { font-family: HelveticaNeue, Helvetica, Verdana, sans-serif; }
+
+.dxsplControl_iOS .loginControl { margin-top: 4px; }
+
+.dxsplControl_iOS .loginControl a {
+    color: #0160E7;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.dxsplControl_iOS .headerTop { height: 33px; }
+
+.dxsplControl_iOS .headerMenu { margin-top: 0px; }
+
+.dxsplPane_iOS.mainContentPane {
+    -moz-box-shadow: initial;
+    -webkit-box-shadow: initial;
+    border-width: 0px !important;
+    box-shadow: initial;
+}
+
+.dxsplPane_iOS.footerPane { border-width: 1px !important; }
+
+.dxsplControl_iOS .accountHeader p {
+    color: #303030;
+    font-size: 18px;
+}
+
+.dxsplControl_iOS .accountHeader h2 {
+    color: #303030;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+
+/* DevEx */
+
+.dxsplControl_DevEx {
+    color: #201F35;
+    font-family: Segoe UI;
+}
+
+.dxsplControl_DevEx .headerPane,
+.dxsplControl_DevEx .footerPane,
+.dxsplControl_DevEx .footerMenu li { background-color: #F2F3F4; }
+
+.dxsplControl_DevEx .templateTitle a,
+.dxsplControl_DevEx .loginControl,
+.dxsplControl_DevEx .loginControl a { color: #4B4B57; }
+
+.dxsplControl_DevEx .loginControl a { border-bottom-color: #4B4B57; }
+
+.dxsplControl_DevEx .headerMenu { margin-top: 13px; }
+
+.dxsplControl_DevEx .accountHeader p { font-size: 11px; }
+
+
+/* BlackGlass */
+
+.dxsplControl_BlackGlass { font-family: Segoe UI; }
+
+.dxsplControl_BlackGlass .headerPane,
+.dxsplControl_BlackGlass .footerPane,
+.dxsplControl_BlackGlass .footerMenu li {
+    background-color: #2A2A2A;
+    color: white;
+}
+
+.dxsplControl_BlackGlass .headerPane { background-image: url('../images/BlackGlassHeader.jpg'); }
+
+.dxsplControl_BlackGlass .leftPanel li[class$="dxnb-last"] ul { border-bottom: 1px solid black; }
+
+.dxsplControl_BlackGlass .accountHeader p { color: #585858; }
+
+.dxsplControl_BlackGlass .loginControl a,
+.dxsplControl_BlackGlass .templateTitle a {
+    border-color: White;
+    color: White;
+}
+
+
+/* Glass */
+
+.dxsplControl_Glass { font-family: Segoe UI; }
+
+.dxsplControl_Glass .headerPane,
+.dxsplControl_Glass .footerPane,
+.dxsplControl_Glass .footerMenu li { background-color: #CFE0E7; }
+
+.dxsplControl_Glass .headerPane { background-image: url('../images/GlassHeader.jpg'); }
+
+.dxsplControl_Glass .footerMenu * { background-image: none !important; }
+
+.dxsplControl_Glass .headerMenu li b { height: 25px !important; }
+
+.dxsplControl_Glass .templateTitle a,
+.dxsplControl_Glass .loginControl,
+.dxsplControl_Glass .loginControl a { color: #4B4B57; }
+
+.dxsplControl_Glass .loginControl a { border-bottom-color: #4B4B57; }
+
+.dxsplControl_Glass .accountHeader h2 { color: #387FA4; }
+
+.dxsplControl_Glass .accountHeader p { color: #575757; }
+
+/* Metropolis */
+
+.dxsplControl_Metropolis { font-family: Segoe UI; }
+
+.dxsplControl_Metropolis .headerPane,
+.dxsplControl_Metropolis .footerMenu li {
+    background-color: White;
+    color: Black;
+}
+
+.dxsplControl_Metropolis .accountHeader h2 { color: #3B3B3B; }
+
+.dxsplControl_Metropolis .accountHeader p { font-size: 11px; }
+
+.dxsplControl_Metropolis .headerMenu { margin-top: 13px; }
+
+.dxsplControl_Metropolis .loginControl a,
+.dxsplControl_Metropolis .templateTitle a {
+    border-color: Black;
+    color: Black;
+}
+
+.dxsplControl_Metropolis .templateTitle a { font-size: 28px; }
+
+.dxsplControl_Metropolis .dxsplVSeparator_Metropolis { border-bottom: 0!important; }

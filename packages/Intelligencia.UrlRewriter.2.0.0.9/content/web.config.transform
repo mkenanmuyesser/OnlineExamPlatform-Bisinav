@@ -1,0 +1,14 @@
+﻿<configuration>
+  <configSections>
+    <section name="rewriter" requirePermission="false" type="Intelligencia.UrlRewriter.Configuration.RewriterConfigurationSectionHandler, Intelligencia.UrlRewriter" />
+  </configSections>
+  <system.web>
+    <httpModules>
+      <add type="Intelligencia.UrlRewriter.RewriterHttpModule, Intelligencia.UrlRewriter" name="UrlRewriter" />
+    </httpModules>
+  </system.web>
+  <rewriter>
+    <redirect url="~/Default.aspx" to="~/Default" />
+    <redirect url="~/Login.aspx" to="~/Login" />
+  </rewriter>
+</configuration>

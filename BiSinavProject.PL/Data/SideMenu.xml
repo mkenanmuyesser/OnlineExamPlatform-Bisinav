@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<menu>
+  <group Text="Sınav İşlemleri" >
+    <item Text="Alan Tanım İşlemleri" NavigateUrl="../Admin/Sinav/AlanTanimIslemleri.aspx"/>
+    <item Text="Deneme Tanım İşlemleri" NavigateUrl="../Admin/Sinav/DenemeTanimIslemleri.aspx"/>
+    <item Text="Ders Tanım İşlemleri" NavigateUrl="../Admin/Sinav/DersTanimIslemleri.aspx" />
+    <item Text="Hızlı Soru Tanım İşlemleri" NavigateUrl="../Admin/Sinav/HizliSoruTanimIslemleri.aspx" />
+    <item Text="Soru Tanım İşlemleri" NavigateUrl="../Admin/Sinav/SoruTanimIslemleri.aspx" />
+    <item Text="Soru Arama İşlemleri" NavigateUrl="../Admin/Sinav/SoruAramaIslemleri.aspx" />
+    <item Text="Oturum Tanım İşlemleri" NavigateUrl="../Admin/Sinav/OturumTanimIslemleri.aspx"/>
+    <item Text="Oturum Deneme Tanım İşlemleri" NavigateUrl="../Admin/Sinav/OturumDenemeTanimIslemleri.aspx"/>
+  </group>
+  <group Text="Video İşlemleri" >
+    <item Text="Kayıt Kategori Tanım İşlemleri" NavigateUrl="../Admin/Video/KayitKategoriTanimIslemleri.aspx"/>
+    <item Text="Kayıt Tanım İşlemleri" NavigateUrl="../Admin/Video/KayitTanimIslemleri.aspx"/>
+  </group>
+  <group Text="Haber İşlemleri" >
+    <item Text="Manşet Tanım İşlemleri" NavigateUrl="../Admin/Haber/MansetTanimIslemleri.aspx"/>
+    <item Text="İçerik Tanım İşlemleri" NavigateUrl="../Admin/Haber/IcerikTanimIslemleri.aspx"/>
+    <item Text="İlan Tanım İşlemleri" NavigateUrl="../Admin/Haber/IlanTanimIslemleri.aspx"/>
+  </group>
+  <group Text="Kurs İşlemleri" >
+    <item Text="İl Tanım İşlemleri" NavigateUrl="../Admin/Akademi/IlTanimIslemleri.aspx"/>
+    <item Text="Kurs Tanım İşlemleri" NavigateUrl="../Admin/Akademi/KursTanimIslemleri.aspx"/>
+  </group>
+  <group Text="Yayın İşlemleri" >
+    <item Text="Kategori Tanım İşlemleri" NavigateUrl="../Admin/Yayin/KategoriTanimIslemleri.aspx"/>
+    <item Text="Kitap Tanım İşlemleri" NavigateUrl="../Admin/Yayin/KitapTanimIslemleri.aspx"/>
+    <item Text="E-Dergi Tanım İşlemleri" NavigateUrl="../Admin/Yayin/EDergiTanimIslemleri.aspx"/>
+    <item Text="E-Dergi Sayfa Tanım İşlemleri" NavigateUrl="../Admin/Yayin/EDergiSayfaTanimIslemleri.aspx"/>
+  </group>
+  <group Text="Kod Paylaşım İşlemleri" >
+    <item Text="Şirket Tanım İşlemleri" NavigateUrl="../Admin/KodPaylasim/SirketTanimIslemleri.aspx"/>
+    <item Text="Servis Tanım İşlemleri" NavigateUrl="../Admin/KodPaylasim/ServisTanimIslemleri.aspx"/>
+    <item Text="Kod Dağıtım Arama İşlemleri" NavigateUrl="../Admin/KodPaylasim/KodDagitimAramaIslemleri.aspx"/>
+  </group>
+  <group Text="Reklam İşlemleri" >
+    <item Text="Reklam Tanım İşlemleri" NavigateUrl="../Admin/Reklam/ReklamTanimIslemleri.aspx"/>
+  </group>
+  <group Text="Kullanıcı İşlemleri" >
+    <item Text="Kullanıcı Tanım İşlemleri" NavigateUrl="../Admin/Kullanici/KullaniciTanimIslemleri.aspx"/>
+  </group>
+  <group Text="Program İşlemleri" >
+    <item Text="Program Ayarları" NavigateUrl="../Admin/Program/ProgramAyarlari.aspx"/>
+    <item Text="Program Logları" NavigateUrl="../Admin/Program/ProgramLoglari.aspx"/>
+  </group>
+  <!--<group Text="Satış İşlemleri" >
+    <item Text="Satış Raporları" NavigateUrl="../Admin/Satis/SatisRaporlari.aspx"/>
+    <item Text="Garanti Bankası Ayarları" NavigateUrl="../Admin/Satis/BankaGarantiAyar.aspx"/>
+  </group>-->
+</menu>

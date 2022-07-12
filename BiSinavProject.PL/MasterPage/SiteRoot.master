@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="SiteRoot.master.cs" Inherits="BiSinavProject.PL.Master_Page.SiteRoot" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-9751903963227988",
+            enable_page_level_ads: true
+        });
+    </script>
+
+    <title>BİSINAV.net - Beşte Beş, Canlı Denemeler, E-Dergiler ve E-Kitaplar, Eğitim Videoları, Haberler, Güncel Bilgilerle Dolu Sınav-Test Sitesi ve Portalı</title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="description" content="egitim, eğitim, deneme, sinav, sınav, online, canlı, bestebes ,beştebeş, beş, e-dergi, edergi, dergi, e-kitap, kitap, video, kurs, dersane, dershane, yayin, yayın, kitap, kpss, bisinav.net, BİSINAV.net, ücretsiz, ucretsiz, kurslari, aday, aktivasyon, satinal, haber, haberler, güncel, guncel, bilgi, site, portal, seviye, ölçme, değerlendirme, başarı, basari, güvenilir, guvenilir,hazırlık, hazirlik, sosyal, facebook, twitter, test, yeni, ücretsiz, ucretsiz, ödül, odul" />
+    <meta name="keywords" content="egitim, eğitim, deneme, sinav, sınav, online, canlı, bestebes ,beştebeş, beş, e-dergi, edergi, dergi, e-kitap, kitap, video, kurs, dersane, dershane, yayin, yayın, kitap, kpss, bisinav.net, BİSINAV.net, ücretsiz, ucretsiz, kurslari, aday, aktivasyon, satinal, haber, haberler, güncel, guncel, bilgi, site, portal, seviye, ölçme, değerlendirme, başarı, basari, güvenilir, guvenilir,hazırlık, hazirlik, sosyal, facebook, twitter, test, yeni, ücretsiz, ucretsiz, ödül, odul" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="alternate" href="http://bisinav.net" hreflang="tr" />
+    <link rel="alternate" href="http://www.bisinav.net" hreflang="tr" />
+
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link type="text/css" rel="stylesheet" href="/Content/Site/css/reset.css" />
+    <link type="text/css" rel="stylesheet" href="/Content/Site/css/font-awesome.min.css" />
+    <link type="text/css" rel="stylesheet" href="/Content/Site/css/main-stylesheet.css" />
+    <link type="text/css" rel="stylesheet" href="/Content/Site/css/lightbox.css" />
+    <link type="text/css" rel="stylesheet" href="/Content/Site/css/shortcodes.css" />
+    <link type="text/css" rel="stylesheet" href="/Content/Site/css/custom-fonts.css" />
+    <link type="text/css" rel="stylesheet" href="/Content/Site/css/custom-colors.css" />
+    <link type="text/css" rel="stylesheet" href="/Content/Site/css/responsive.css" />
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-73606626-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <asp:ContentPlaceHolder ID="ContentPlaceHolderHead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="boxed">
+            <header class="header">
+                <div class="header-topmenu">
+                    <div class="wrapper">
+                        <ul class="le-first" style="height: 5px;">
+                        </ul>
+                    </div>
+                </div>
+                <div class="wrapper">
+                    <div class="header-block">
+                        <div class="header-logo">
+                            <a href="/" style="font-size: xx-large">
+                                <img src="/Content/Site/Images/Resimler/logo-221x73.jpg" />
+                            </a>
+                        </div>
+                        <div class="header-banner">
+                            <asp:HyperLink runat="server" ID="HyperLinkHyperLinkBaslikBolgesi">
+                            </asp:HyperLink>
+                        </div>
+                    </div>
+                </div>
+                <nav class="main-menu">
+                    <div class="wrapper">
+                        <ul class="menu">
+                            <li><a href="/">ANASAYFA</a></li>
+                            <li><a href="/BesteBesSinav.aspx" style="border-bottom: 3px solid #1AB3EE;">BEŞTE BEŞ</a></li>
+                            <li><a href="/DenemeSinav.aspx">CANLI DENEME</a></li>
+                            <li><a href="/VideoDers.aspx" style="border-bottom: 3px solid #1AB3EE;">VİDEO DERS</a></li>
+                            <li><a href="/EDergi.aspx">E-DERGİ ve E-KİTAP</a></li>
+                            <li><a href="/Kurs.aspx" style="border-bottom: 3px solid #1AB3EE;">KURS</a></li>
+                            <li><a href="/Yayin.aspx">YAYIN</a></li>
+                            <li><a href="https://satinal.bisinav.net/" target="_blank" style="border-bottom: 3px solid green;">SATIN AL</a></li>
+                            <li><a href="/Iletisim.aspx" style="border-bottom: 3px solid #EECC1A;">İLETİŞİM</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            <section class="content has-sidebar">
+                <div class="wrapper">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolderAkisMenu" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+                <div class="wrapper">
+                    <div class="main-content">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolderMiddleContent" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <aside id="sidebar">
+                        <asp:ContentPlaceHolder ID="ContentRight" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </aside>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="wrapper">
+                </div>
+                <div class="footer-bottom">
+                    <div class="wrapper">
+                        <center>
+                    <p >Tüm Hakkı Saklıdır. &copy; <%= DateTime.Now.Year %> <b>ForceWebGlobal</b></p>
+                    </center>
+                        <div style="float: right;">
+                            <a href="https://twitter.com/BisinavNET" target="_blank" class="social-icon">
+                                <i class="fa fa-twitter"></i>
+                                <b>Twitter</b>
+                            </a>
+                            &nbsp;&nbsp;
+                                <a href="https://www.facebook.com/BisinavNET-1557369921258519/" target="_blank" class="social-icon">
+                                    <i class="fa fa-facebook"></i>
+                                    <b>Facebook</b>
+                                </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script type="text/javascript" src="/Content/Site/jscript/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="/Content/Site/jscript/theme-scripts.js"></script>
+        <script type="text/javascript" src="/Content/Site/jscript/lightbox.js"></script>
+    </form>
+</body>
+</html>

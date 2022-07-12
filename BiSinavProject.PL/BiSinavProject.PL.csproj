@@ -1,0 +1,1486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B1ABC9E3-FD89-484B-9B32-D195E9EEEAD6}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BiSinavProject.PL</RootNamespace>
+    <AssemblyName>BiSinavProject.PL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.123, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="aspsnippets.facebookapi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\aspsnippets.facebookapi.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Charts.v14.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Data.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Office.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Office.v14.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.PivotGrid.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.PivotGrid.v14.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Printing.v14.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.RichEdit.v14.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Sparkline.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Sparkline.v14.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.SpellChecker.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.SpellChecker.v14.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Spreadsheet.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Spreadsheet.v14.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Utils.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxGauges.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.ASPxGauges.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.ASPxHtmlEditor.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.ASPxPivotGrid.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxScheduler.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.ASPxScheduler.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.ASPxSpellChecker.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxSpreadsheet.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.ASPxSpreadsheet.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxThemes.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.ASPxThemes.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.ASPxTreeList.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.ASPxTreeList.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.Web.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.Web.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraBars.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraBars.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraCharts.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraCharts.v14.1.Web, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraCharts.v14.1.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraEditors.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraEditors.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraGauges.v14.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraGauges.v14.1.Presets, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraGauges.v14.1.Presets.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraLayout.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraLayout.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPivotGrid.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraPivotGrid.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraPrinting.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraReports.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraReports.v14.1.Web, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraReports.v14.1.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraScheduler.v14.1.Core, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraScheduler.v14.1.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="DevExpress.XtraTreeList.v14.1, Version=14.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\DevExpress.XtraTreeList.v14.1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Facebook, Version=6.0.10.0, Culture=neutral, PublicKeyToken=58cb4f2111d1e6de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Facebook.7.0.6\lib\net45\Facebook.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Intelligencia.UrlRewriter, Version=2.0.0.6, Culture=neutral, PublicKeyToken=0573f3650687980d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Intelligencia.UrlRewriter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.DynamicData">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Entity">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.ApplicationServices">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.EnterpriseServices">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin.aspx" />
+    <Content Include="Admin\Akademi\IlTanimIslemleri.aspx" />
+    <Content Include="Admin\Akademi\KursTanimIslemleri.aspx" />
+    <Content Include="Admin\AnaMenu.aspx" />
+    <Content Include="Admin\Haber\IcerikTanimIslemleri.aspx" />
+    <Content Include="Admin\Haber\IlanTanimIslemleri.aspx" />
+    <Content Include="Admin\Haber\MansetTanimIslemleri.aspx" />
+    <Content Include="Admin\KodPaylasim\KodDagitimAramaIslemleri.aspx" />
+    <Content Include="Admin\KodPaylasim\ServisTanimIslemleri.aspx" />
+    <Content Include="Admin\KodPaylasim\SirketTanimIslemleri.aspx" />
+    <Content Include="Admin\Kullanici\KullaniciTanimIslemleri.aspx" />
+    <Content Include="Admin\Program\ProgramAyarlari.aspx" />
+    <Content Include="Admin\Program\ProgramLoglari.aspx" />
+    <Content Include="Admin\Reklam\ReklamTanimIslemleri.aspx" />
+    <Content Include="Admin\Satis\BankaGarantiAyar.aspx" />
+    <Content Include="Admin\Satis\SatisRaporlari.aspx" />
+    <Content Include="Admin\Sinav\AlanTanimIslemleri.aspx" />
+    <Content Include="Admin\Sinav\DenemeTanimIslemleri.aspx" />
+    <Content Include="Admin\Sinav\DersTanimIslemleri.aspx" />
+    <Content Include="Admin\Sinav\HizliSoruTanimIslemleri.aspx" />
+    <Content Include="Admin\Sinav\OturumDenemeTanimIslemleri.aspx" />
+    <Content Include="Admin\Sinav\OturumTanimIslemleri.aspx" />
+    <Content Include="Admin\Sinav\SoruAramaIslemleri.aspx" />
+    <Content Include="Admin\Sinav\SoruTanimIslemleri.aspx" />
+    <Content Include="Admin\Video\KayitKategoriTanimIslemleri.aspx" />
+    <Content Include="Admin\Video\KayitTanimIslemleri.aspx" />
+    <Content Include="Admin\Yayin\EDergiGoster.aspx" />
+    <Content Include="Admin\Yayin\EDergiSayfaTanimIslemleri.aspx" />
+    <Content Include="Admin\Yayin\EDergiTanimIslemleri.aspx" />
+    <Content Include="Admin\Yayin\KategoriTanimIslemleri.aspx" />
+    <Content Include="Admin\Yayin\KitapTanimIslemleri.aspx" />
+    <Content Include="App_Data\UploadTemp\empty.txt" />
+    <Content Include="BesteBesSinav.aspx" />
+    <Content Include="BesteBes\Sinav.aspx" />
+    <Content Include="Content\Css\animate.css" />
+    <Content Include="Content\Css\bootstrap-theme.css" />
+    <Content Include="Content\Css\bootstrap-theme.min.css" />
+    <Content Include="Content\Css\bootstrap.css" />
+    <Content Include="Content\Css\bootstrap.min.css" />
+    <Content Include="Content\Css\custom.css" />
+    <Content Include="Content\Css\font-awesome.css" />
+    <Content Include="Content\Css\jquery.gritter.css" />
+    <Content Include="Content\Css\patterns\header-profile-skin-1.png" />
+    <Content Include="Content\Css\patterns\header-profile-skin-2.png" />
+    <Content Include="Content\Css\patterns\header-profile-skin-3.png" />
+    <Content Include="Content\Css\patterns\header-profile.png" />
+    <Content Include="Content\Css\patterns\shattered.png" />
+    <Content Include="Content\Css\Site.css" />
+    <Content Include="Content\Css\StockTicker.css" />
+    <Content Include="Content\Css\style.css" />
+    <Content Include="Content\Css\style2.css" />
+    <Content Include="Content\Css\toastr.min.css" />
+    <Content Include="Content\ExamCss\default.css" />
+    <Content Include="Content\ExamCss\theme.css" />
+    <Content Include="Content\Fonts\fontawesome-webfonte0a5.svg" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\Images\AquaHeader.jpg" />
+    <Content Include="Content\Images\backgrounds\daire_bos_kucuk.png" />
+    <Content Include="Content\Images\backgrounds\daire_bos_orta.png" />
+    <Content Include="Content\Images\backgrounds\daire_gri.png" />
+    <Content Include="Content\Images\backgrounds\daire_gri_kucuk.png" />
+    <Content Include="Content\Images\backgrounds\daire_gri_orta.png" />
+    <Content Include="Content\Images\backgrounds\daire_kirmizi.png" />
+    <Content Include="Content\Images\backgrounds\daire_kirmizi_kucuk.png" />
+    <Content Include="Content\Images\backgrounds\daire_kirmizi_orta.png" />
+    <Content Include="Content\Images\backgrounds\daire_mavi.png" />
+    <Content Include="Content\Images\backgrounds\daire_mavi_kucuk.png" />
+    <Content Include="Content\Images\backgrounds\daire_mavi_orta.png" />
+    <Content Include="Content\Images\backgrounds\daire_sari_kucuk.png" />
+    <Content Include="Content\Images\backgrounds\daire_sari_orta.png" />
+    <Content Include="Content\Images\backgrounds\daire_sarı.png" />
+    <Content Include="Content\Images\backgrounds\daire_turuncu.png" />
+    <Content Include="Content\Images\backgrounds\daire_turuncu_kucuk.png" />
+    <Content Include="Content\Images\backgrounds\daire_turuncu_orta.png" />
+    <Content Include="Content\Images\backgrounds\daire_yesil.png" />
+    <Content Include="Content\Images\backgrounds\daire_yesil_kucuk.png" />
+    <Content Include="Content\Images\backgrounds\daire_yesil_orta.png" />
+    <Content Include="Content\Images\backgrounds\salon_satis_bacground.jpg" />
+    <Content Include="Content\Images\BlackGlassHeader.jpg" />
+    <Content Include="Content\Images\GlassHeader.jpg" />
+    <Content Include="Content\Images\Icons\back.png" />
+    <Content Include="Content\Images\Icons\cancel.png" />
+    <Content Include="Content\Images\Icons\delete.png" />
+    <Content Include="Content\Images\Icons\detail.png" />
+    <Content Include="Content\Images\Icons\edit.png" />
+    <Content Include="Content\Images\Icons\empty.png" />
+    <Content Include="Content\Images\Icons\facebook\6.png" />
+    <Content Include="Content\Images\Icons\facebook\1.png" />
+    <Content Include="Content\Images\Icons\facebook\2.png" />
+    <Content Include="Content\Images\Icons\facebook\3.png" />
+    <Content Include="Content\Images\Icons\facebook\4.png" />
+    <Content Include="Content\Images\Icons\facebook\5.png" />
+    <Content Include="Content\Images\Icons\facebook\7.png" />
+    <Content Include="Content\Images\Icons\green_tick.png" />
+    <Content Include="Content\Images\Icons\green_tick_2.png" />
+    <Content Include="Content\Images\Icons\male.png" />
+    <Content Include="Content\Images\Icons\red_erase.png" />
+    <Content Include="Content\Images\Icons\save.png" />
+    <Content Include="Content\Images\Icons\send.png" />
+    <Content Include="Content\Images\Icons\warning.png" />
+    <Content Include="Content\Images\Icons\warning_2.png" />
+    <Content Include="Content\Images\Male-Icon.png" />
+    <Content Include="Content\Images\PlasticBlueHeader.jpg" />
+    <Content Include="Content\Images\RedWineHeader.jpg" />
+    <Content Include="Content\Images\YapimAsamasi.png" />
+    <Content Include="Content\Scripts\bootstrap.js" />
+    <Content Include="Content\Scripts\bootstrap.min.js" />
+    <Content Include="Content\Scripts\demo\chartjs-demo.js" />
+    <Content Include="Content\Scripts\demo\flot-demo.js" />
+    <Content Include="Content\Scripts\demo\morris-demo.js" />
+    <Content Include="Content\Scripts\demo\peity-demo.js" />
+    <Content Include="Content\Scripts\demo\rickshaw-demo.js" />
+    <Content Include="Content\Scripts\demo\sparkline-demo.js" />
+    <Content Include="Content\Scripts\inspinia.js" />
+    <Content Include="Content\Scripts\jclock.js" />
+    <Content Include="Content\Scripts\jquery-1.10.2.min.js" />
+    <Content Include="App_Browsers\form.browser" />
+    <Content Include="App_Browsers\genericmozilla5.browser" />
+    <None Include="Content\Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="Content\Scripts\jquery-1.6.4.js" />
+    <Content Include="Content\Scripts\jquery-1.6.4.min.js" />
+    <Content Include="Content\Scripts\jquery-1.9.1.js" />
+    <Content Include="Content\Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Content\Scripts\jquery-2.1.1.js" />
+    <Content Include="Content\Scripts\jquery-ui-1.10.4.min.js" />
+    <Content Include="Content\Scripts\jquery-ui.custom.min.js" />
+    <Content Include="Content\Scripts\jquery.color-2.1.2.min.js" />
+    <Content Include="Content\Scripts\jquery.metisMenu.js" />
+    <Content Include="Content\Scripts\jquery.signalR-2.2.0.js" />
+    <Content Include="Content\Scripts\jquery.signalR-2.2.0.min.js" />
+    <Content Include="Content\Scripts\jquery.slimscroll.min.js" />
+    <Content Include="Content\Scripts\npm.js" />
+    <Content Include="Content\Scripts\pace.min.js" />
+    <Content Include="Content\Scripts\plugins\blueimp\jquery.blueimp-gallery.min.js" />
+    <Content Include="Content\Scripts\plugins\chartJs\Chart.min.js" />
+    <Content Include="Content\Scripts\plugins\chosen\chosen.jquery.js" />
+    <Content Include="Content\Scripts\plugins\codemirror\codemirror.js" />
+    <Content Include="Content\Scripts\plugins\codemirror\mode\javascript\javascript.js" />
+    <Content Include="Content\Scripts\plugins\colorpicker\bootstrap-colorpicker.min.js" />
+    <Content Include="Content\Scripts\plugins\cropper\cropper.min.js" />
+    <Content Include="Content\Scripts\plugins\datapicker\bootstrap-datepicker.js" />
+    <Content Include="Content\Scripts\plugins\dataTables\dataTables.bootstrap.js" />
+    <Content Include="Content\Scripts\plugins\dataTables\dataTables.responsive.js" />
+    <Content Include="Content\Scripts\plugins\dataTables\dataTables.tableTools.min.js" />
+    <Content Include="Content\Scripts\plugins\dataTables\jquery.dataTables.js" />
+    <Content Include="Content\Scripts\plugins\diff_match_patch\javascript\diff_match_patch.js" />
+    <Content Include="Content\Scripts\plugins\dropzone\dropzone.js" />
+    <Content Include="Content\Scripts\plugins\easypiechart\jquery.easypiechart.js" />
+    <Content Include="Content\Scripts\plugins\flot\curvedLines.js" />
+    <Content Include="Content\Scripts\plugins\flot\jquery.flot.js" />
+    <Content Include="Content\Scripts\plugins\flot\jquery.flot.pie.js" />
+    <Content Include="Content\Scripts\plugins\flot\jquery.flot.resize.js" />
+    <Content Include="Content\Scripts\plugins\flot\jquery.flot.spline.js" />
+    <Content Include="Content\Scripts\plugins\flot\jquery.flot.symbol.js" />
+    <Content Include="Content\Scripts\plugins\flot\jquery.flot.time.js" />
+    <Content Include="Content\Scripts\plugins\flot\jquery.flot.tooltip.min.js" />
+    <Content Include="Content\Scripts\plugins\fullcalendar\fullcalendar.min.js" />
+    <Content Include="Content\Scripts\plugins\fullcalendar\moment.min.js" />
+    <Content Include="Content\Scripts\plugins\gritter\images\gritter-light.png" />
+    <Content Include="Content\Scripts\plugins\gritter\images\gritter.png" />
+    <Content Include="Content\Scripts\plugins\gritter\images\ie-spacer.gif" />
+    <Content Include="Content\Scripts\plugins\gritter\jquery.gritter.css" />
+    <Content Include="Content\Scripts\plugins\gritter\jquery.gritter.min.js" />
+    <Content Include="Content\Scripts\plugins\iCheck\icheck.min.js" />
+    <Content Include="Content\Scripts\plugins\idle-timer\idle-timer.min.js" />
+    <Content Include="Content\Scripts\plugins\ionRangeSlider\ion.rangeSlider.min.js" />
+    <Content Include="Content\Scripts\plugins\jasny\jasny-bootstrap.min.js" />
+    <Content Include="Content\Scripts\plugins\jeditable\jquery.jeditable.js" />
+    <Content Include="Content\Scripts\plugins\jqGrid\i18n\grid.locale-en.js" />
+    <Content Include="Content\Scripts\plugins\jqGrid\jquery.jqGrid.min.js" />
+    <Content Include="Content\Scripts\plugins\jquery-ui\jquery-ui.min.js" />
+    <Content Include="Content\Scripts\plugins\jsKnob\jquery.knob.js" />
+    <Content Include="Content\Scripts\plugins\jsTree\jstree.min.js" />
+    <Content Include="Content\Scripts\plugins\jvectormap\jquery-jvectormap-1.2.2.min.js" />
+    <Content Include="Content\Scripts\plugins\jvectormap\jquery-jvectormap-world-mill-en.js" />
+    <Content Include="Content\Scripts\plugins\metisMenu\jquery.metisMenu.js" />
+    <Content Include="Content\Scripts\plugins\morris\morris.js" />
+    <Content Include="Content\Scripts\plugins\morris\raphael-2.1.0.min.js" />
+    <Content Include="Content\Scripts\plugins\nestable\jquery.nestable.js" />
+    <Content Include="Content\Scripts\plugins\nouslider\jquery.nouislider.min.js" />
+    <Content Include="Content\Scripts\plugins\pace\pace.min.js" />
+    <Content Include="Content\Scripts\plugins\peity\jquery.peity.min.js" />
+    <Content Include="Content\Scripts\plugins\preetyTextDiff\jquery.pretty-text-diff.min.js" />
+    <Content Include="Content\Scripts\plugins\rickshaw\rickshaw.min.js" />
+    <Content Include="Content\Scripts\plugins\rickshaw\vendor\d3.v3.js" />
+    <Content Include="Content\Scripts\plugins\slimscroll\jquery.slimscroll.min.js" />
+    <Content Include="Content\Scripts\plugins\sparkline\jquery.sparkline.min.js" />
+    <Content Include="Content\Scripts\plugins\staps\jquery.steps.min.js" />
+    <Content Include="Content\Scripts\plugins\summernote\summernote.min.js" />
+    <Content Include="Content\Scripts\plugins\switchery\switchery.js" />
+    <Content Include="Content\Scripts\plugins\tinycon\tinycon.min.js" />
+    <Content Include="Content\Scripts\plugins\toastr\toastr.min.js" />
+    <Content Include="Content\Scripts\plugins\validate\jquery.validate.min.js" />
+    <Content Include="Content\Scripts\plugins\video\responsible-video.js" />
+    <Content Include="Content\Scripts\SignalR.Kullanici.js" />
+    <Content Include="Content\Scripts\SignalR.Satis.js" />
+    <Content Include="Content\Site\css\custom-colors.css" />
+    <Content Include="Content\Site\css\custom-fonts.css" />
+    <Content Include="Content\Site\css\demo-settings.css" />
+    <Content Include="Content\Site\css\font-awesome.css" />
+    <Content Include="Content\Site\css\font-awesome.min.css" />
+    <Content Include="Content\Site\css\ie-ancient.css" />
+    <Content Include="Content\Site\css\lightbox.css" />
+    <Content Include="Content\Site\css\main-stylesheet.css" />
+    <Content Include="Content\Site\css\reset.css" />
+    <Content Include="Content\Site\css\responsive.css" />
+    <Content Include="Content\Site\css\responsive\desktop.css" />
+    <Content Include="Content\Site\css\responsive\ipad.css" />
+    <Content Include="Content\Site\css\responsive\phone.css" />
+    <Content Include="Content\Site\css\shortcodes.css" />
+    <Content Include="Content\Site\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\Site\fonts\fontawesome-webfontba72.svg" />
+    <Content Include="Content\Site\font\fontawesome-webfontf77b-2.html" />
+    <Content Include="Content\Site\font\fontawesome-webfontf77b.html" />
+    <Content Include="Content\Site\Images\16513867.jpg" />
+    <Content Include="Content\Site\Images\background-texture-1.jpg" />
+    <Content Include="Content\Site\Images\background-texture-2.jpg" />
+    <Content Include="Content\Site\Images\background-texture-3.jpg" />
+    <Content Include="Content\Site\Images\background-texture-4.jpg" />
+    <Content Include="Content\Site\Images\background-texture-5.jpg" />
+    <Content Include="Content\Site\Images\demo\image-1.png" />
+    <Content Include="Content\Site\Images\demo\image-2.png" />
+    <Content Include="Content\Site\Images\demo\image-3.png" />
+    <Content Include="Content\Site\Images\demo\image-4.png" />
+    <Content Include="Content\Site\Images\demo\image-5.png" />
+    <Content Include="Content\Site\Images\demo\spray-info-background.png" />
+    <Content Include="Content\Site\Images\demo\spray-info-colors.png" />
+    <Content Include="Content\Site\Images\demo\spray-info-fonts.png" />
+    <Content Include="Content\Site\Images\favicon.html" />
+    <Content Include="Content\Site\Images\header-logo.png" />
+    <Content Include="Content\Site\Images\lightbox-close.png" />
+    <Content Include="Content\Site\Images\lightbox-left.jpg" />
+    <Content Include="Content\Site\Images\lightbox-right.jpg" />
+    <Content Include="Content\Site\Images\loading.gif" />
+    <Content Include="Content\Site\Images\Logo\arı1.jpg" />
+    <Content Include="Content\Site\Images\Logo\arı2.jpg" />
+    <Content Include="Content\Site\Images\Logo\arı3.jpg" />
+    <Content Include="Content\Site\Images\Logo\arı4.jpg" />
+    <Content Include="Content\Site\Images\Logo\arı5.jpg" />
+    <Content Include="Content\Site\Images\no-banner-125x125.jpg" />
+    <Content Include="Content\Site\Images\no-banner-300x250.jpg" />
+    <Content Include="Content\Site\Images\no-banner-728x90.jpg" />
+    <Content Include="Content\Site\Images\photos\avatar-1.jpg" />
+    <Content Include="Content\Site\Images\photos\avatar-2.jpg" />
+    <Content Include="Content\Site\Images\photos\avatar-3.jpg" />
+    <Content Include="Content\Site\Images\photos\avatar-4.jpg" />
+    <Content Include="Content\Site\Images\photos\image-1.jpg" />
+    <Content Include="Content\Site\Images\photos\image-10.jpg" />
+    <Content Include="Content\Site\Images\photos\image-11.jpg" />
+    <Content Include="Content\Site\Images\photos\image-12.jpg" />
+    <Content Include="Content\Site\Images\photos\image-13.jpg" />
+    <Content Include="Content\Site\Images\photos\image-14.jpg" />
+    <Content Include="Content\Site\Images\photos\image-15.jpg" />
+    <Content Include="Content\Site\Images\photos\image-16.jpg" />
+    <Content Include="Content\Site\Images\photos\image-17.jpg" />
+    <Content Include="Content\Site\Images\photos\image-19.jpg" />
+    <Content Include="Content\Site\Images\photos\image-2.jpg" />
+    <Content Include="Content\Site\Images\photos\image-20.jpg" />
+    <Content Include="Content\Site\Images\photos\image-21.jpg" />
+    <Content Include="Content\Site\Images\photos\image-22.jpg" />
+    <Content Include="Content\Site\Images\photos\image-23.jpg" />
+    <Content Include="Content\Site\Images\photos\image-24.jpg" />
+    <Content Include="Content\Site\Images\photos\image-25.jpg" />
+    <Content Include="Content\Site\Images\photos\image-26.jpg" />
+    <Content Include="Content\Site\Images\photos\image-27.jpg" />
+    <Content Include="Content\Site\Images\photos\image-28.jpg" />
+    <Content Include="Content\Site\Images\photos\image-29.jpg" />
+    <Content Include="Content\Site\Images\photos\image-3.jpg" />
+    <Content Include="Content\Site\Images\photos\image-30.jpg" />
+    <Content Include="Content\Site\Images\photos\image-31.jpg" />
+    <Content Include="Content\Site\Images\photos\image-32.jpg" />
+    <Content Include="Content\Site\Images\photos\image-33.jpg" />
+    <Content Include="Content\Site\Images\photos\image-34.jpg" />
+    <Content Include="Content\Site\Images\photos\image-35.jpg" />
+    <Content Include="Content\Site\Images\photos\image-36.jpg" />
+    <Content Include="Content\Site\Images\photos\image-37.jpg" />
+    <Content Include="Content\Site\Images\photos\image-38.jpg" />
+    <Content Include="Content\Site\Images\photos\image-39.jpg" />
+    <Content Include="Content\Site\Images\photos\image-4.jpg" />
+    <Content Include="Content\Site\Images\photos\image-40.jpg" />
+    <Content Include="Content\Site\Images\photos\image-41.jpg" />
+    <Content Include="Content\Site\Images\photos\image-42.jpg" />
+    <Content Include="Content\Site\Images\photos\image-43.jpg" />
+    <Content Include="Content\Site\Images\photos\image-44.jpg" />
+    <Content Include="Content\Site\Images\photos\image-45.jpg" />
+    <Content Include="Content\Site\Images\photos\image-46.jpg" />
+    <Content Include="Content\Site\Images\photos\image-47.jpg" />
+    <Content Include="Content\Site\Images\photos\image-48.jpg" />
+    <Content Include="Content\Site\Images\photos\image-49.jpg" />
+    <Content Include="Content\Site\Images\photos\image-5.jpg" />
+    <Content Include="Content\Site\Images\photos\image-50.jpg" />
+    <Content Include="Content\Site\Images\photos\image-6.jpg" />
+    <Content Include="Content\Site\Images\photos\image-7.jpg" />
+    <Content Include="Content\Site\Images\photos\image-8.jpg" />
+    <Content Include="Content\Site\Images\photos\image-9.jpg" />
+    <Content Include="Content\Site\Images\photos\res1.jpg" />
+    <Content Include="Content\Site\Images\photos\res2.jpg" />
+    <Content Include="Content\Site\Images\Resimler\1.jpg" />
+    <Content Include="Content\Site\Images\Resimler\380x100-canlıdenemeler.jpg" />
+    <Content Include="Content\Site\Images\Resimler\380x100-e-dergi.jpg" />
+    <Content Include="Content\Site\Images\Resimler\380x100-kurslar.jpg" />
+    <Content Include="Content\Site\Images\Resimler\380x100-yeniyayınlar.jpg" />
+    <Content Include="Content\Site\Images\Resimler\430328_424397284264834_1532345094_n.jpg" />
+    <Content Include="Content\Site\Images\Resimler\60s.jpg.png" />
+    <Content Include="Content\Site\Images\Resimler\hata404.jpg" />
+    <Content Include="Content\Site\Images\Resimler\home7_slide_1.png" />
+    <Content Include="Content\Site\Images\Resimler\Hypnotherapy-Websites-Jumping-Icon-100w.png" />
+    <Content Include="Content\Site\Images\Resimler\kapaklar 20-35-25.jpg" />
+    <Content Include="Content\Site\Images\Resimler\logo-design-checklist-checkmark.jpg" />
+    <Content Include="Content\Site\Images\Resimler\logo-221x73.jpg" />
+    <Content Include="Content\Site\Images\Resimler\math.jpg" />
+    <Content Include="Content\Site\Images\Resimler\video.jpg" />
+    <Content Include="Content\Site\Images\Sinav\blue_pin.png" />
+    <Content Include="Content\Site\Images\Sinav\green_arrow_left.png" />
+    <Content Include="Content\Site\Images\Sinav\green_arrow_right.png" />
+    <Content Include="Content\Site\Images\Sinav\green_empty.png" />
+    <Content Include="Content\Site\Images\Sinav\green_new.png" />
+    <Content Include="Content\Site\Images\Sinav\green_pin.png" />
+    <Content Include="Content\Site\Images\Sinav\green_tick.png" />
+    <Content Include="Content\Site\Images\Sinav\red_abort.png" />
+    <Content Include="Content\Site\Images\Sinav\red_bookmark.png" />
+    <Content Include="Content\Site\Images\Sinav\red_close.png" />
+    <Content Include="Content\Site\Images\Sinav\red_danger.png" />
+    <Content Include="Content\Site\Images\Sinav\red_erase.png" />
+    <Content Include="Content\Site\Images\Sinav\red_error.png" />
+    <Content Include="Content\Site\Images\Sinav\red_no.png" />
+    <Content Include="Content\Site\Images\Sinav\red_pin.png" />
+    <Content Include="Content\Site\Images\Sinav\red_problem.png" />
+    <Content Include="Content\Site\Images\Sinav\red_refresh.png" />
+    <Content Include="Content\Site\Images\Sinav\red_remove.png" />
+    <Content Include="Content\Site\Images\Sinav\red_tag.png" />
+    <Content Include="Content\Site\Images\Sinav\red_tick.png" />
+    <Content Include="Content\Site\Images\Sinav\yellow_cup.png" />
+    <Content Include="Content\Site\Images\Sinav\yellow_exit.png" />
+    <Content Include="Content\Site\Images\Sinav\yellow_modify.png" />
+    <Content Include="Content\Site\Images\Sinav\yellow_pin.png" />
+    <Content Include="Content\Site\Images\Sinav\yellow_search.png" />
+    <Content Include="Content\Site\jscript\demo-settings.js" />
+    <Content Include="Content\Site\jscript\jquery-latest.min.js" />
+    <Content Include="Content\Site\jscript\jquery.nicescroll.js" />
+    <Content Include="Content\Site\jscript\jquery.nicescroll.min.js" />
+    <Content Include="Content\Site\jscript\lightbox.js" />
+    <Content Include="Content\Site\jscript\theme-scripts.js" />
+    <Content Include="Content\TurnJs\assets\css\font-awesome.min.css" />
+    <Content Include="Content\TurnJs\assets\css\main.css" />
+    <Content Include="Content\TurnJs\assets\fonts\fontawesome-webfont8ee2.svg" />
+    <Content Include="Content\TurnJs\assets\img\arrows%402x.png" />
+    <Content Include="Content\TurnJs\assets\img\favicon.png" />
+    <Content Include="Content\TurnJs\assets\img\loader%402x.gif" />
+    <Content Include="Content\TurnJs\assets\js\app.js" />
+    <Content Include="Content\TurnJs\assets\js\backbone-min.js" />
+    <Content Include="Content\TurnJs\assets\js\jquery-2.0.3.min.js" />
+    <Content Include="Content\TurnJs\assets\js\turn.min.js" />
+    <Content Include="Content\TurnJs\assets\js\underscore-min.js" />
+    <Content Include="Content\TurnJs\content\magazine\1\1.jpg" />
+    <Content Include="Content\TurnJs\content\magazine\1\thumb.jpg" />
+    <Content Include="Content\TurnJs\css\basic.css" />
+    <Content Include="Content\TurnJs\css\jquery.ui.css" />
+    <Content Include="Content\TurnJs\css\jquery.ui.html4.css" />
+    <Content Include="Content\TurnJs\css\magazine.css" />
+    <Content Include="Content\TurnJs\extras\jGestures-license.txt" />
+    <Content Include="Content\TurnJs\extras\jgestures.min.js" />
+    <Content Include="Content\TurnJs\extras\jquery-ui-1.8.20.custom.min.js" />
+    <Content Include="Content\TurnJs\extras\jquery.min.1.7.js" />
+    <Content Include="Content\TurnJs\extras\jquery.mousewheel.min.js" />
+    <Content Include="Content\TurnJs\extras\modernizr.2.5.3.min.js" />
+    <Content Include="Content\TurnJs\js\basic.js" />
+    <Content Include="Content\TurnJs\js\magazine.js" />
+    <Content Include="Content\TurnJs\lib\hash.js" />
+    <Content Include="Content\TurnJs\lib\scissor.js" />
+    <Content Include="Content\TurnJs\lib\scissor.min.js" />
+    <Content Include="Content\TurnJs\lib\turn.html4.js" />
+    <Content Include="Content\TurnJs\lib\turn.html4.min.js" />
+    <Content Include="Content\TurnJs\lib\turn.js" />
+    <Content Include="Content\TurnJs\lib\turn.min.js" />
+    <Content Include="Content\TurnJs\lib\zoom.js" />
+    <Content Include="Content\TurnJs\lib\zoom.min.js" />
+    <Content Include="Content\TurnJs\PagePattern\001-wrinkled-wall.png" />
+    <Content Include="Content\TurnJs\PagePattern\002-sandblasting.png" />
+    <Content Include="Content\TurnJs\PagePattern\003-granulated-loom.png" />
+    <Content Include="Content\TurnJs\PagePattern\004-polished-wood.png" />
+    <Content Include="Content\TurnJs\PagePattern\005-wood-grain.png" />
+    <Content Include="Content\TurnJs\PagePattern\006-fine-plaster.png" />
+    <Content Include="Content\TurnJs\PagePattern\007-dark-loom.png" />
+    <Content Include="Content\TurnJs\PagePattern\008-cover-book.png" />
+    <Content Include="Content\TurnJs\pages\01.jpg" />
+    <Content Include="Content\TurnJs\pages\02.jpg" />
+    <Content Include="Content\TurnJs\pages\03.jpg" />
+    <Content Include="Content\TurnJs\pages\04.jpg" />
+    <Content Include="Content\TurnJs\pages\05.jpg" />
+    <Content Include="Content\TurnJs\pages\06.jpg" />
+    <Content Include="Content\TurnJs\pages\1-large.jpg" />
+    <Content Include="Content\TurnJs\pages\1-thumb.jpg" />
+    <Content Include="Content\TurnJs\pages\1.jpg" />
+    <Content Include="Content\TurnJs\pages\10-large.jpg" />
+    <Content Include="Content\TurnJs\pages\10-thumb.jpg" />
+    <Content Include="Content\TurnJs\pages\10.jpg" />
+    <Content Include="Content\TurnJs\pages\11-large.jpg" />
+    <Content Include="Content\TurnJs\pages\11-thumb.jpg" />
+    <Content Include="Content\TurnJs\pages\11.jpg" />
+    <Content Include="Content\TurnJs\pages\12-large.jpg" />
+    <Content Include="Content\TurnJs\pages\12-thumb.jpg" />
+    <Content Include="Content\TurnJs\pages\12.jpg" />
+    <Content Include="Content\TurnJs\pages\2-large.jpg" />
+    <Content Include="Content\TurnJs\pages\2-thumb.jpg" />
+    <Content Include="Content\TurnJs\pages\2.jpg" />
+    <Content Include="Content\TurnJs\pages\3-large.jpg" />
+    <Content Include="Content\TurnJs\pages\3-thumb.jpg" />
+    <Content Include="Content\TurnJs\pages\3.jpg" />
+    <Content Include="Content\TurnJs\pages\4-large.jpg" />
+    <Content Include="Content\TurnJs\pages\4-thumb.jpg" />
+    <Content Include="Content\TurnJs\pages\4.jpg" />
+    <Content Include="Content\TurnJs\pages\5-large.jpg" />
+    <Content Include="Content\TurnJs\pages\5-thumb.jpg" />
+    <Content Include="Content\TurnJs\pages\5.jpg" />
+    <Content Include="Content\TurnJs\pages\6-large.jpg" />
+    <Content Include="Content\TurnJs\pages\6-thumb.jpg" />
+    <Content Include="Content\TurnJs\pages\6.jpg" />
+    <Content Include="Content\TurnJs\pages\7-large.jpg" />
+    <Content Include="Content\TurnJs\pages\7-thumb.jpg" />
+    <Content Include="Content\TurnJs\pages\7.jpg" />
+    <Content Include="Content\TurnJs\pages\8-large.jpg" />
+    <Content Include="Content\TurnJs\pages\8-thumb.jpg" />
+    <Content Include="Content\TurnJs\pages\8.jpg" />
+    <Content Include="Content\TurnJs\pages\9-large.jpg" />
+    <Content Include="Content\TurnJs\pages\9-thumb.jpg" />
+    <Content Include="Content\TurnJs\pages\9.jpg" />
+    <Content Include="Content\TurnJs\pages\preview.jpg" />
+    <Content Include="Content\TurnJs\pics\arrows.png" />
+    <Content Include="Content\TurnJs\pics\loader.gif" />
+    <Content Include="Content\TurnJs\pics\zoom-icons-editable.png" />
+    <Content Include="Content\TurnJs\pics\zoom-icons.png" />
+    <Content Include="Content\TurnJs\pics\zoom.png" />
+    <Content Include="Data\DBModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBModel.edmx</DependentUpon>
+      <LastGenOutput>DBModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Data\DBModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DBModel.edmx</DependentUpon>
+      <LastGenOutput>DBModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="Data\SideMenu.xml" />
+    <Content Include="Default.aspx" />
+    <Content Include="DenemeSinav.aspx" />
+    <Content Include="Deneme\Sinav.aspx" />
+    <Content Include="Dergi\Oku.aspx" />
+    <Content Include="EDergi.aspx" />
+    <Content Include="favicon.ico" />
+    <Content Include="Kullanici\GirisYonlendir.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="google5168ceb804e6e1fd.html" />
+    <Content Include="Hata.aspx" />
+    <Content Include="Iletisim.aspx" />
+    <Content Include="Kullanici\Detay.aspx" />
+    <Content Include="Kullanici\Hatirlatma.aspx" />
+    <Content Include="VideoDers.aspx" />
+    <Content Include="Kurs.aspx" />
+    <Content Include="packages.config" />
+    <Content Include="robots.txt" />
+    <Content Include="Satis\OOSPay.aspx" />
+    <Content Include="Satis\OOSPayResults.aspx" />
+    <Content Include="Services\BiSinavWcfService.svc" />
+    <Content Include="sitemap.xml" />
+    <Content Include="Uploads\empty.txt" />
+    <Content Include="Uploads\Program\empty.txt" />
+    <Content Include="Uploads\User\empty.txt" />
+    <Content Include="UserControl\LoginLogout.ascx" />
+    <Content Include="UserControl\PageFlipper.ascx" />
+    <Content Include="UserControl\UserReport.ascx" />
+    <Content Include="Video\Izle.aspx" />
+    <Content Include="Yayin.aspx" />
+    <Content Include="Admin\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Content\Css\bootstrap-theme.css.map" />
+    <Content Include="Content\Css\bootstrap.css.map" />
+    <Content Include="Content\Fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Content\Fonts\fontawesome-webfonte0a5.eot" />
+    <Content Include="Content\Fonts\fontawesome-webfonte0a5.ttf" />
+    <Content Include="Content\Fonts\fontawesome-webfonte0a5.woff" />
+    <Content Include="Content\Fonts\fontawesome-webfonte0a5.woff2" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\Fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\Scripts\jquery-1.10.2.min.map" />
+    <Content Include="Content\Scripts\jquery-1.9.1.min.map" />
+    <Content Include="Content\Site\fonts\fontawesome-webfontba72.eot" />
+    <Content Include="Content\Site\fonts\fontawesome-webfontba72.ttf" />
+    <Content Include="Content\Site\fonts\fontawesome-webfontba72.woff" />
+    <Content Include="Content\Site\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Content\TurnJs\assets\fonts\fontawesome-webfont8ee2.eot" />
+    <Content Include="Content\TurnJs\assets\fonts\fontawesome-webfont8ee2.ttf" />
+    <Content Include="Content\TurnJs\assets\fonts\fontawesome-webfont8ee2.woff" />
+    <Content Include="Content\TurnJs\lib\compress.sh" />
+    <Content Include="Content\TurnJs\pages\1-regions.json" />
+    <Content Include="Content\TurnJs\pages\10-regions.json" />
+    <Content Include="Content\TurnJs\pages\11-regions.json" />
+    <Content Include="Content\TurnJs\pages\12-regions.json" />
+    <Content Include="Content\TurnJs\pages\2-regions.json" />
+    <Content Include="Content\TurnJs\pages\3-regions.json" />
+    <Content Include="Content\TurnJs\pages\4-regions.json" />
+    <Content Include="Content\TurnJs\pages\5-regions.json" />
+    <Content Include="Content\TurnJs\pages\6-regions.json" />
+    <Content Include="Content\TurnJs\pages\7-regions.json" />
+    <Content Include="Content\TurnJs\pages\8-regions.json" />
+    <Content Include="Content\TurnJs\pages\9-regions.json" />
+    <Content Include="Content\TurnJs\turnjs4-api-docs.pdf" />
+    <Content Include="MasterPage\AdminMain.master" />
+    <Content Include="MasterPage\AdminRoot.master" />
+    <Content Include="MasterPage\SinavMain.master" />
+    <Content Include="MasterPage\SinavRoot.Master" />
+    <Content Include="MasterPage\SiteMain.master" />
+    <Content Include="MasterPage\SiteRoot.master" />
+    <EntityDeploy Include="Data\DBModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DBModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Data\DBModel.edmx.diagram">
+      <DependentUpon>DBModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Data\CevaplarOrnekExcel.xlsx" />
+    <Content Include="Content\Site\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Site\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Site\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Site\fonts\FontAwesome.otf" />
+    <Content Include="Content\Site\jscript\jquery-1.10.2.min.map" />
+    <None Include="Properties\PublishProfiles\acer.pubxml" />
+    <None Include="Properties\PublishProfiles\dell.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Akademi\IlTanimIslemleri.aspx.cs">
+      <DependentUpon>IlTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Akademi\IlTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>IlTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Akademi\KursTanimIslemleri.aspx.cs">
+      <DependentUpon>KursTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Akademi\KursTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>KursTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AnaMenu.aspx.cs">
+      <DependentUpon>AnaMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AnaMenu.aspx.designer.cs">
+      <DependentUpon>AnaMenu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Haber\IcerikTanimIslemleri.aspx.cs">
+      <DependentUpon>IcerikTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Haber\IcerikTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>IcerikTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Haber\IlanTanimIslemleri.aspx.cs">
+      <DependentUpon>IlanTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Haber\IlanTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>IlanTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Haber\MansetTanimIslemleri.aspx.cs">
+      <DependentUpon>MansetTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Haber\MansetTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>MansetTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\KodPaylasim\KodDagitimAramaIslemleri.aspx.cs">
+      <DependentUpon>KodDagitimAramaIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\KodPaylasim\KodDagitimAramaIslemleri.aspx.designer.cs">
+      <DependentUpon>KodDagitimAramaIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\KodPaylasim\ServisTanimIslemleri.aspx.cs">
+      <DependentUpon>ServisTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\KodPaylasim\ServisTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>ServisTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\KodPaylasim\SirketTanimIslemleri.aspx.cs">
+      <DependentUpon>SirketTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\KodPaylasim\SirketTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>SirketTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Kullanici\KullaniciTanimIslemleri.aspx.cs">
+      <DependentUpon>KullaniciTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Kullanici\KullaniciTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>KullaniciTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Program\ProgramAyarlari.aspx.cs">
+      <DependentUpon>ProgramAyarlari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Program\ProgramAyarlari.aspx.designer.cs">
+      <DependentUpon>ProgramAyarlari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Program\ProgramLoglari.aspx.cs">
+      <DependentUpon>ProgramLoglari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Program\ProgramLoglari.aspx.designer.cs">
+      <DependentUpon>ProgramLoglari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Reklam\ReklamTanimIslemleri.aspx.cs">
+      <DependentUpon>ReklamTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Reklam\ReklamTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>ReklamTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Satis\BankaGarantiAyar.aspx.cs">
+      <DependentUpon>BankaGarantiAyar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Satis\BankaGarantiAyar.aspx.designer.cs">
+      <DependentUpon>BankaGarantiAyar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Satis\SatisRaporlari.aspx.cs">
+      <DependentUpon>SatisRaporlari.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Satis\SatisRaporlari.aspx.designer.cs">
+      <DependentUpon>SatisRaporlari.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sinav\AlanTanimIslemleri.aspx.cs">
+      <DependentUpon>AlanTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sinav\AlanTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>AlanTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sinav\DenemeTanimIslemleri.aspx.cs">
+      <DependentUpon>DenemeTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sinav\DenemeTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>DenemeTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sinav\DersTanimIslemleri.aspx.cs">
+      <DependentUpon>DersTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sinav\DersTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>DersTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sinav\HizliSoruTanimIslemleri.aspx.cs">
+      <DependentUpon>HizliSoruTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sinav\HizliSoruTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>HizliSoruTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sinav\OturumDenemeTanimIslemleri.aspx.cs">
+      <DependentUpon>OturumDenemeTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sinav\OturumDenemeTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>OturumDenemeTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sinav\OturumTanimIslemleri.aspx.cs">
+      <DependentUpon>OturumTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sinav\OturumTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>OturumTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sinav\SoruAramaIslemleri.aspx.cs">
+      <DependentUpon>SoruAramaIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sinav\SoruAramaIslemleri.aspx.designer.cs">
+      <DependentUpon>SoruAramaIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Sinav\SoruTanimIslemleri.aspx.cs">
+      <DependentUpon>SoruTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Sinav\SoruTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>SoruTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Video\KayitKategoriTanimIslemleri.aspx.cs">
+      <DependentUpon>KayitKategoriTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Video\KayitKategoriTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>KayitKategoriTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Video\KayitTanimIslemleri.aspx.cs">
+      <DependentUpon>KayitTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Video\KayitTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>KayitTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Yayin\EDergiGoster.aspx.cs">
+      <DependentUpon>EDergiGoster.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Yayin\EDergiGoster.aspx.designer.cs">
+      <DependentUpon>EDergiGoster.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Yayin\EDergiSayfaTanimIslemleri.aspx.cs">
+      <DependentUpon>EDergiSayfaTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Yayin\EDergiSayfaTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>EDergiSayfaTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Yayin\EDergiTanimIslemleri.aspx.cs">
+      <DependentUpon>EDergiTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Yayin\EDergiTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>EDergiTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Yayin\KategoriTanimIslemleri.aspx.cs">
+      <DependentUpon>KategoriTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Yayin\KategoriTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>KategoriTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Yayin\KitapTanimIslemleri.aspx.cs">
+      <DependentUpon>KitapTanimIslemleri.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Yayin\KitapTanimIslemleri.aspx.designer.cs">
+      <DependentUpon>KitapTanimIslemleri.aspx</DependentUpon>
+    </Compile>
+    <Content Include="App_Code\FormRewriterControlAdapter.cs" />
+    <Content Include="App_Code\GenisletmeMototlari.cs" />
+    <Compile Include="BesteBesSinav.aspx.cs">
+      <DependentUpon>BesteBesSinav.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BesteBesSinav.aspx.designer.cs">
+      <DependentUpon>BesteBesSinav.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BesteBes\Sinav.aspx.cs">
+      <DependentUpon>Sinav.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BesteBes\Sinav.aspx.designer.cs">
+      <DependentUpon>Sinav.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Class\Business\BesteBesBs.cs" />
+    <Compile Include="Class\Business\DenemeBs.cs" />
+    <Compile Include="Class\Business\BankaBs.cs" />
+    <Compile Include="Class\Business\KodBs.cs" />
+    <Compile Include="Class\CustomType\BesteBesType.cs" />
+    <Compile Include="Class\CustomType\DenemeType.cs" />
+    <Compile Include="Class\CustomType\DersSonucType.cs" />
+    <Compile Include="Class\CustomType\ExcelType.cs" />
+    <Compile Include="Class\CustomType\Facebook.cs" />
+    <Compile Include="Class\CustomType\SoruType.cs" />
+    <Compile Include="Class\Enum\KodServisTip.cs" />
+    <Compile Include="Class\Enum\ReklamBolgeTip.cs" />
+    <Compile Include="Class\Enum\ServisKodDurumTip.cs" />
+    <Compile Include="Class\Enum\SiparisDurumTip.cs" />
+    <Compile Include="Class\Enum\SinavDurumEnum.cs" />
+    <Compile Include="Class\Enum\SinavModeEnum.cs" />
+    <Compile Include="Class\Helper\CodeHelper.cs" />
+    <Compile Include="Class\Helper\MailHelper.cs" />
+    <Compile Include="Class\Helper\PageHelper.cs" />
+    <Compile Include="Class\Helper\SessionHelper.cs" />
+    <Compile Include="Data\Alan.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_Applications.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_Membership.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_Paths.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_PersonalizationAllUsers.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_PersonalizationPerUser.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_Profile.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_Roles.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_SchemaVersions.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_Users.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\aspnet_WebEvent_Events.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Ayar.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BankaGaranti.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\BolgeTip.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Dagitim.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DBModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DBModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DBModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DBModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Deneme.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DenemeKullanici.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\DenemeKullaniciSoru.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Der.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\EDergi.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\EDergiSayfa.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Icerik.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Il.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Ilan.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\IlKur.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Kategori.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\KategoriKitap.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Kayit.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\KayitKategori.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Kitap.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Kur.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Log.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Manset.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Oturum.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\OturumDeneme.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Servi.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ServisDeneme.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ServisEDergi.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\ServisTip.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Sipari.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SiparisDeneme.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SiparisDurumTip.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SiparisEDergi.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Sirket.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\SonucDetay.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Soru.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\sysdiagram.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Data\Tanitim.cs">
+      <DependentUpon>DBModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DenemeSinav.aspx.cs">
+      <DependentUpon>DenemeSinav.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DenemeSinav.aspx.designer.cs">
+      <DependentUpon>DenemeSinav.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Deneme\Sinav.aspx.cs">
+      <DependentUpon>Sinav.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Deneme\Sinav.aspx.designer.cs">
+      <DependentUpon>Sinav.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dergi\Oku.aspx.cs">
+      <DependentUpon>Oku.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dergi\Oku.aspx.designer.cs">
+      <DependentUpon>Oku.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EDergi.aspx.cs">
+      <DependentUpon>EDergi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EDergi.aspx.designer.cs">
+      <DependentUpon>EDergi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\GirisYonlendir.aspx.cs">
+      <DependentUpon>GirisYonlendir.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kullanici\GirisYonlendir.aspx.designer.cs">
+      <DependentUpon>GirisYonlendir.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Hata.aspx.cs">
+      <DependentUpon>Hata.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Hata.aspx.designer.cs">
+      <DependentUpon>Hata.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Iletisim.aspx.cs">
+      <DependentUpon>Iletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Iletisim.aspx.designer.cs">
+      <DependentUpon>Iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\Detay.aspx.cs">
+      <DependentUpon>Detay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kullanici\Detay.aspx.designer.cs">
+      <DependentUpon>Detay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanici\Hatirlatma.aspx.cs">
+      <DependentUpon>Hatirlatma.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kullanici\Hatirlatma.aspx.designer.cs">
+      <DependentUpon>Hatirlatma.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VideoDers.aspx.cs">
+      <DependentUpon>VideoDers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VideoDers.aspx.designer.cs">
+      <DependentUpon>VideoDers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kurs.aspx.cs">
+      <DependentUpon>Kurs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kurs.aspx.designer.cs">
+      <DependentUpon>Kurs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\AdminMain.master.cs">
+      <DependentUpon>AdminMain.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\AdminMain.master.designer.cs">
+      <DependentUpon>AdminMain.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\AdminRoot.master.cs">
+      <DependentUpon>AdminRoot.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\AdminRoot.master.designer.cs">
+      <DependentUpon>AdminRoot.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\SinavMain.master.cs">
+      <DependentUpon>SinavMain.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\SinavMain.master.designer.cs">
+      <DependentUpon>SinavMain.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\SinavRoot.Master.cs">
+      <DependentUpon>SinavRoot.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\SinavRoot.Master.designer.cs">
+      <DependentUpon>SinavRoot.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\SiteMain.master.cs">
+      <DependentUpon>SiteMain.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\SiteMain.master.designer.cs">
+      <DependentUpon>SiteMain.master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\SiteRoot.master.cs">
+      <DependentUpon>SiteRoot.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\SiteRoot.master.designer.cs">
+      <DependentUpon>SiteRoot.master</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Satis\OOSPay.aspx.cs">
+      <DependentUpon>OOSPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Satis\OOSPay.aspx.designer.cs">
+      <DependentUpon>OOSPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Satis\OOSPayResults.aspx.cs">
+      <DependentUpon>OOSPayResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Satis\OOSPayResults.aspx.designer.cs">
+      <DependentUpon>OOSPayResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\BiSinavServiceTest.cs" />
+    <Compile Include="Services\BiSinavWcfService.svc.cs">
+      <DependentUpon>BiSinavWcfService.svc</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\LoginLogout.ascx.cs">
+      <DependentUpon>LoginLogout.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\LoginLogout.ascx.designer.cs">
+      <DependentUpon>LoginLogout.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\PageFlipper.ascx.cs">
+      <DependentUpon>PageFlipper.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\PageFlipper.ascx.designer.cs">
+      <DependentUpon>PageFlipper.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl\UserReport.ascx.cs">
+      <DependentUpon>UserReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControl\UserReport.ascx.designer.cs">
+      <DependentUpon>UserReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Video\Izle.aspx.cs">
+      <DependentUpon>Izle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Video\Izle.aspx.designer.cs">
+      <DependentUpon>Izle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yayin.aspx.cs">
+      <DependentUpon>Yayin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yayin.aspx.designer.cs">
+      <DependentUpon>Yayin.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>14707</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:14690/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://localhost:14690/</IISAppRootUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

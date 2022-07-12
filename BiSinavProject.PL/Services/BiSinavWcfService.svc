@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="BiSinavProject.PL.Services.BiSinavWcfService" CodeBehind="BiSinavWcfService.svc.cs" %>

@@ -1,0 +1,1733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\kenan\Desktop\WebSite</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Admin.aspx">
+      <publishTime>10/13/2017 17:57:30</publishTime>
+    </File>
+    <File Include="Admin/Akademi/IlTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:32</publishTime>
+    </File>
+    <File Include="Admin/Akademi/KursTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:32</publishTime>
+    </File>
+    <File Include="Admin/AnaMenu.aspx">
+      <publishTime>10/13/2017 17:57:32</publishTime>
+    </File>
+    <File Include="Admin/Haber/IcerikTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:32</publishTime>
+    </File>
+    <File Include="Admin/Haber/IlanTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:32</publishTime>
+    </File>
+    <File Include="Admin/Haber/MansetTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:32</publishTime>
+    </File>
+    <File Include="Admin/KodPaylasim/KodDagitimAramaIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:32</publishTime>
+    </File>
+    <File Include="Admin/KodPaylasim/ServisTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:32</publishTime>
+    </File>
+    <File Include="Admin/KodPaylasim/SirketTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:33</publishTime>
+    </File>
+    <File Include="Admin/Kullanici/KullaniciTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:33</publishTime>
+    </File>
+    <File Include="Admin/Program/ProgramAyarlari.aspx">
+      <publishTime>10/13/2017 17:57:33</publishTime>
+    </File>
+    <File Include="Admin/Program/ProgramLoglari.aspx">
+      <publishTime>10/13/2017 17:57:33</publishTime>
+    </File>
+    <File Include="Admin/Reklam/ReklamTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:33</publishTime>
+    </File>
+    <File Include="Admin/Satis/BankaGarantiAyar.aspx">
+      <publishTime>10/13/2017 17:57:33</publishTime>
+    </File>
+    <File Include="Admin/Satis/SatisRaporlari.aspx">
+      <publishTime>10/13/2017 17:57:33</publishTime>
+    </File>
+    <File Include="Admin/Sinav/AlanTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:33</publishTime>
+    </File>
+    <File Include="Admin/Sinav/DenemeTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:33</publishTime>
+    </File>
+    <File Include="Admin/Sinav/DersTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:33</publishTime>
+    </File>
+    <File Include="Admin/Sinav/HizliSoruTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:34</publishTime>
+    </File>
+    <File Include="Admin/Sinav/OturumDenemeTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:34</publishTime>
+    </File>
+    <File Include="Admin/Sinav/OturumTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:34</publishTime>
+    </File>
+    <File Include="Admin/Sinav/SoruAramaIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:34</publishTime>
+    </File>
+    <File Include="Admin/Sinav/SoruTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:34</publishTime>
+    </File>
+    <File Include="Admin/Video/KayitKategoriTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:34</publishTime>
+    </File>
+    <File Include="Admin/Video/KayitTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:34</publishTime>
+    </File>
+    <File Include="Admin/Web.config">
+      <publishTime>10/13/2017 17:57:32</publishTime>
+    </File>
+    <File Include="Admin/Yayin/EDergiGoster.aspx">
+      <publishTime>10/13/2017 17:57:34</publishTime>
+    </File>
+    <File Include="Admin/Yayin/EDergiSayfaTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:34</publishTime>
+    </File>
+    <File Include="Admin/Yayin/EDergiTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:34</publishTime>
+    </File>
+    <File Include="Admin/Yayin/KategoriTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:35</publishTime>
+    </File>
+    <File Include="Admin/Yayin/KitapTanimIslemleri.aspx">
+      <publishTime>10/13/2017 17:57:35</publishTime>
+    </File>
+    <File Include="App_Browsers/form.browser">
+      <publishTime>10/13/2017 17:57:35</publishTime>
+    </File>
+    <File Include="App_Browsers/genericmozilla5.browser">
+      <publishTime>10/13/2017 17:57:35</publishTime>
+    </File>
+    <File Include="App_Code/FormRewriterControlAdapter.cs">
+      <publishTime>10/13/2017 17:57:35</publishTime>
+    </File>
+    <File Include="App_Code/GenisletmeMototlari.cs">
+      <publishTime>10/13/2017 17:57:35</publishTime>
+    </File>
+    <File Include="App_Data/UploadTemp/empty.txt">
+      <publishTime>10/13/2017 17:57:35</publishTime>
+    </File>
+    <File Include="BesteBes/Sinav.aspx">
+      <publishTime>10/13/2017 17:57:35</publishTime>
+    </File>
+    <File Include="BesteBesSinav.aspx">
+      <publishTime>10/13/2017 17:57:31</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>01/24/2013 08:49:22</publishTime>
+    </File>
+    <File Include="bin/aspsnippets.facebookapi.dll">
+      <publishTime>11/20/2013 01:46:16</publishTime>
+    </File>
+    <File Include="bin/BiSinavProject.PL.dll">
+      <publishTime>07/07/2020 23:13:14</publishTime>
+    </File>
+    <File Include="bin/BiSinavProject.PL.pdb">
+      <publishTime>07/07/2020 23:13:14</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Charts.v14.1.Core.dll">
+      <publishTime>07/22/2014 12:11:22</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Data.v14.1.dll">
+      <publishTime>07/22/2014 12:10:54</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Office.v14.1.Core.dll">
+      <publishTime>07/22/2014 12:11:14</publishTime>
+    </File>
+    <File Include="bin/DevExpress.PivotGrid.v14.1.Core.dll">
+      <publishTime>07/22/2014 12:11:28</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Printing.v14.1.Core.dll">
+      <publishTime>07/22/2014 12:11:14</publishTime>
+    </File>
+    <File Include="bin/DevExpress.RichEdit.v14.1.Core.dll">
+      <publishTime>07/22/2014 12:11:28</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Sparkline.v14.1.Core.dll">
+      <publishTime>07/22/2014 12:11:18</publishTime>
+    </File>
+    <File Include="bin/DevExpress.SpellChecker.v14.1.Core.dll">
+      <publishTime>07/22/2014 12:11:18</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Spreadsheet.v14.1.Core.dll">
+      <publishTime>07/22/2014 12:11:30</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Utils.v14.1.dll">
+      <publishTime>07/22/2014 12:11:20</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxGauges.v14.1.dll">
+      <publishTime>07/22/2014 12:10:42</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxHtmlEditor.v14.1.dll">
+      <publishTime>07/22/2014 12:10:42</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxPivotGrid.v14.1.dll">
+      <publishTime>07/22/2014 12:10:42</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxScheduler.v14.1.dll">
+      <publishTime>07/22/2014 12:10:44</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxSpellChecker.v14.1.dll">
+      <publishTime>07/22/2014 12:10:46</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxSpreadsheet.v14.1.dll">
+      <publishTime>07/22/2014 12:11:18</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxThemes.v14.1.dll">
+      <publishTime>07/22/2014 12:10:46</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.ASPxTreeList.v14.1.dll">
+      <publishTime>07/22/2014 12:10:46</publishTime>
+    </File>
+    <File Include="bin/DevExpress.Web.v14.1.dll">
+      <publishTime>07/22/2014 12:10:42</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraBars.v14.1.dll">
+      <publishTime>07/22/2014 12:11:22</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraCharts.v14.1.dll">
+      <publishTime>07/22/2014 12:11:26</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraCharts.v14.1.Web.dll">
+      <publishTime>07/22/2014 12:10:42</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraEditors.v14.1.dll">
+      <publishTime>07/22/2014 12:11:26</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraGauges.v14.1.Core.dll">
+      <publishTime>07/22/2014 12:11:26</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraGauges.v14.1.Presets.dll">
+      <publishTime>07/22/2014 12:11:26</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraLayout.v14.1.dll">
+      <publishTime>07/22/2014 12:11:26</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraPivotGrid.v14.1.dll">
+      <publishTime>07/22/2014 12:11:28</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraPrinting.v14.1.dll">
+      <publishTime>07/22/2014 12:11:28</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraReports.v14.1.dll">
+      <publishTime>07/22/2014 12:11:28</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraReports.v14.1.Web.dll">
+      <publishTime>07/22/2014 12:11:28</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraScheduler.v14.1.Core.dll">
+      <publishTime>07/22/2014 12:11:30</publishTime>
+    </File>
+    <File Include="bin/DevExpress.XtraTreeList.v14.1.dll">
+      <publishTime>07/22/2014 12:11:30</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>10/13/2017 18:10:58</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>10/13/2017 18:10:56</publishTime>
+    </File>
+    <File Include="bin/Facebook.dll">
+      <publishTime>10/13/2017 18:10:58</publishTime>
+    </File>
+    <File Include="bin/Intelligencia.UrlRewriter.dll">
+      <publishTime>07/24/2007 20:17:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CSharp.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.ComponentModel.DataAnnotations.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Configuration.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Data.DataSetExtensions.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Data.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Drawing.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.EnterpriseServices.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.Serialization.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Security.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.ServiceModel.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.ServiceModel.Web.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Transactions.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.ApplicationServices.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.DynamicData.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Entity.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Extensions.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Web.Services.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Xml.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="bin/System.Xml.Linq.dll">
+      <publishTime>09/26/2012 03:16:08</publishTime>
+    </File>
+    <File Include="Content/Css/animate.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/bootstrap-theme.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/bootstrap-theme.css.map">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/bootstrap-theme.min.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/bootstrap.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/bootstrap.css.map">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/bootstrap.min.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/custom.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/font-awesome.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/jquery.gritter.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/patterns/header-profile-skin-1.png">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/patterns/header-profile-skin-2.png">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/patterns/header-profile-skin-3.png">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/patterns/header-profile.png">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/patterns/shattered.png">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/Site.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/StockTicker.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/style.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/style2.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Css/toastr.min.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/ExamCss/default.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/ExamCss/theme.css">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Fonts/fontawesome-webfontd41d.eot">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Fonts/fontawesome-webfonte0a5.eot">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Fonts/fontawesome-webfonte0a5.svg">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Fonts/fontawesome-webfonte0a5.ttf">
+      <publishTime>10/13/2017 17:57:36</publishTime>
+    </File>
+    <File Include="Content/Fonts/fontawesome-webfonte0a5.woff">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Fonts/fontawesome-webfonte0a5.woff2">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Fonts/glyphicons-halflings-regular.eot">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Fonts/glyphicons-halflings-regular.svg">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Fonts/glyphicons-halflings-regular.woff">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/AquaHeader.jpg">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_bos_kucuk.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_bos_orta.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_gri.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_gri_kucuk.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_gri_orta.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_kirmizi.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_kirmizi_kucuk.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_kirmizi_orta.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_mavi.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_mavi_kucuk.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_mavi_orta.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_sari_kucuk.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_sari_orta.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_sarı.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_turuncu.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_turuncu_kucuk.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_turuncu_orta.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_yesil.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_yesil_kucuk.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/daire_yesil_orta.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/backgrounds/salon_satis_bacground.jpg">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/BlackGlassHeader.jpg">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/GlassHeader.jpg">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/back.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/cancel.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/delete.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/detail.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/edit.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/empty.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/facebook/1.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/facebook/2.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/facebook/3.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/facebook/4.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/facebook/5.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/facebook/6.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/facebook/7.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/green_tick.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/green_tick_2.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/male.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/red_erase.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/save.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/send.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/warning.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Icons/warning_2.png">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Images/Male-Icon.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/PlasticBlueHeader.jpg">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/RedWineHeader.jpg">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Images/YapimAsamasi.png">
+      <publishTime>10/13/2017 17:57:37</publishTime>
+    </File>
+    <File Include="Content/Scripts/bootstrap.js">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Scripts/bootstrap.min.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/demo/chartjs-demo.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/demo/flot-demo.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/demo/morris-demo.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/demo/peity-demo.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/demo/rickshaw-demo.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/demo/sparkline-demo.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/inspinia.js">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Scripts/jclock.js">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery-1.10.2.min.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery-1.10.2.min.map">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery-1.6.4.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery-1.6.4.min.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery-1.9.1.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery-1.9.1.min.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery-1.9.1.min.map">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery-2.1.1.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery-ui-1.10.4.min.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery-ui.custom.min.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery.color-2.1.2.min.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery.metisMenu.js">
+      <publishTime>10/13/2017 17:57:38</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery.signalR-2.2.0.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery.signalR-2.2.0.min.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/jquery.slimscroll.min.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/npm.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/pace.min.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/blueimp/jquery.blueimp-gallery.min.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/chartJs/Chart.min.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/chosen/chosen.jquery.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/codemirror/codemirror.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/codemirror/mode/javascript/javascript.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/colorpicker/bootstrap-colorpicker.min.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/cropper/cropper.min.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/datapicker/bootstrap-datepicker.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/dataTables/dataTables.bootstrap.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/dataTables/dataTables.responsive.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/dataTables/dataTables.tableTools.min.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/dataTables/jquery.dataTables.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/diff_match_patch/javascript/diff_match_patch.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/dropzone/dropzone.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/easypiechart/jquery.easypiechart.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/flot/curvedLines.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/flot/jquery.flot.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/flot/jquery.flot.pie.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/flot/jquery.flot.resize.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/flot/jquery.flot.spline.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/flot/jquery.flot.symbol.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/flot/jquery.flot.time.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/flot/jquery.flot.tooltip.min.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/fullcalendar/fullcalendar.min.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/fullcalendar/moment.min.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/gritter/images/gritter-light.png">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/gritter/images/gritter.png">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/gritter/images/ie-spacer.gif">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/gritter/jquery.gritter.css">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/gritter/jquery.gritter.min.js">
+      <publishTime>10/13/2017 17:57:40</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/iCheck/icheck.min.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/idle-timer/idle-timer.min.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/ionRangeSlider/ion.rangeSlider.min.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/jasny/jasny-bootstrap.min.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/jeditable/jquery.jeditable.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/jqGrid/i18n/grid.locale-en.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/jqGrid/jquery.jqGrid.min.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/jquery-ui/jquery-ui.min.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/jsKnob/jquery.knob.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/jsTree/jstree.min.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/jvectormap/jquery-jvectormap-1.2.2.min.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/jvectormap/jquery-jvectormap-world-mill-en.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/metisMenu/jquery.metisMenu.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/morris/morris.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/morris/raphael-2.1.0.min.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/nestable/jquery.nestable.js">
+      <publishTime>10/13/2017 17:57:41</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/nouslider/jquery.nouislider.min.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/pace/pace.min.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/peity/jquery.peity.min.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/preetyTextDiff/jquery.pretty-text-diff.min.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/rickshaw/rickshaw.min.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/rickshaw/vendor/d3.v3.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/slimscroll/jquery.slimscroll.min.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/sparkline/jquery.sparkline.min.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/staps/jquery.steps.min.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/summernote/summernote.min.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/switchery/switchery.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/tinycon/tinycon.min.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/toastr/toastr.min.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/validate/jquery.validate.min.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/plugins/video/responsible-video.js">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Scripts/SignalR.Kullanici.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Scripts/SignalR.Satis.js">
+      <publishTime>10/13/2017 17:57:39</publishTime>
+    </File>
+    <File Include="Content/Site/css/custom-colors.css">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/css/custom-fonts.css">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/css/demo-settings.css">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/css/font-awesome.css">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/css/font-awesome.min.css">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/css/ie-ancient.css">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/css/lightbox.css">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/css/main-stylesheet.css">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/css/reset.css">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/css/responsive.css">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/css/responsive/desktop.css">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/css/responsive/ipad.css">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/css/responsive/phone.css">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/css/shortcodes.css">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/font/fontawesome-webfontf77b-2.html">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/font/fontawesome-webfontf77b.html">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/fonts/fontawesome-webfont.eot">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/fonts/fontawesome-webfont.svg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/fonts/fontawesome-webfont.ttf">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/fonts/fontawesome-webfont.woff">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/fonts/fontawesome-webfontba72.eot">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/fonts/fontawesome-webfontba72.svg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/fonts/fontawesome-webfontba72.ttf">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/fonts/fontawesome-webfontba72.woff">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/fonts/fontawesome-webfontd41d.eot">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/fonts/FontAwesome.otf">
+      <publishTime>10/13/2017 17:57:42</publishTime>
+    </File>
+    <File Include="Content/Site/Images/16513867.jpg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/background-texture-1.jpg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/background-texture-2.jpg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/background-texture-3.jpg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/background-texture-4.jpg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/background-texture-5.jpg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/demo/image-1.png">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/demo/image-2.png">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/demo/image-3.png">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/demo/image-4.png">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/demo/image-5.png">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/demo/spray-info-background.png">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/demo/spray-info-colors.png">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/demo/spray-info-fonts.png">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/favicon.html">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/header-logo.png">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/lightbox-close.png">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/lightbox-left.jpg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/lightbox-right.jpg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/loading.gif">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Logo/arı1.jpg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Logo/arı2.jpg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Logo/arı3.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Logo/arı4.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Logo/arı5.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/no-banner-125x125.jpg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/no-banner-300x250.jpg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/no-banner-728x90.jpg">
+      <publishTime>10/13/2017 17:57:43</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/avatar-1.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/avatar-2.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/avatar-3.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/avatar-4.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-1.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-10.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-11.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-12.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-13.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-14.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-15.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-16.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-17.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-19.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-2.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-20.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-21.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-22.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-23.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-24.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-25.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-26.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-27.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-28.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-29.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-3.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-30.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-31.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-32.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-33.jpg">
+      <publishTime>10/13/2017 17:57:44</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-34.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-35.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-36.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-37.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-38.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-39.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-4.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-40.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-41.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-42.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-43.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-44.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-45.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-46.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-47.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-48.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-49.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-5.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-50.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-6.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-7.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-8.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/image-9.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/res1.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/photos/res2.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/1.jpg">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/380x100-canlıdenemeler.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/380x100-e-dergi.jpg">
+      <publishTime>10/13/2017 17:57:45</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/380x100-kurslar.jpg">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/380x100-yeniyayınlar.jpg">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/430328_424397284264834_1532345094_n.jpg">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/60s.jpg.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/hata404.jpg">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/home7_slide_1.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/Hypnotherapy-Websites-Jumping-Icon-100w.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/kapaklar 20-35-25.jpg">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/logo-221x73.jpg">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/logo-design-checklist-checkmark.jpg">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/math.jpg">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Resimler/video.jpg">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/blue_pin.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/green_arrow_left.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/green_arrow_right.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/green_empty.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/green_new.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/green_pin.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/green_tick.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/red_abort.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/red_bookmark.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/red_close.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/red_danger.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/red_erase.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/red_error.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/red_no.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/red_pin.png">
+      <publishTime>10/13/2017 17:57:46</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/red_problem.png">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/red_refresh.png">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/red_remove.png">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/red_tag.png">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/red_tick.png">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/yellow_cup.png">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/yellow_exit.png">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/yellow_modify.png">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/yellow_pin.png">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/Images/Sinav/yellow_search.png">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/jscript/demo-settings.js">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/jscript/jquery-1.10.2.min.map">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/jscript/jquery-latest.min.js">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/jscript/jquery.nicescroll.js">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/jscript/jquery.nicescroll.min.js">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/jscript/lightbox.js">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/Site/jscript/theme-scripts.js">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/TurnJs/assets/css/font-awesome.min.css">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/TurnJs/assets/css/main.css">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/TurnJs/assets/fonts/fontawesome-webfont8ee2.eot">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/TurnJs/assets/fonts/fontawesome-webfont8ee2.svg">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/TurnJs/assets/fonts/fontawesome-webfont8ee2.ttf">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/TurnJs/assets/fonts/fontawesome-webfont8ee2.woff">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/TurnJs/assets/img/arrows%402x.png">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Content/TurnJs/assets/img/favicon.png">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/assets/img/loader%402x.gif">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/assets/js/app.js">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/assets/js/backbone-min.js">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/assets/js/jquery-2.0.3.min.js">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/assets/js/turn.min.js">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/assets/js/underscore-min.js">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/content/magazine/1/1.jpg">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/content/magazine/1/thumb.jpg">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/css/basic.css">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/css/jquery.ui.css">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/css/jquery.ui.html4.css">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/css/magazine.css">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/extras/jGestures-license.txt">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/extras/jgestures.min.js">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/extras/jquery-ui-1.8.20.custom.min.js">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/extras/jquery.min.1.7.js">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/extras/jquery.mousewheel.min.js">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/extras/modernizr.2.5.3.min.js">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/js/basic.js">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/js/magazine.js">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/lib/compress.sh">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/lib/hash.js">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/lib/scissor.js">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/lib/scissor.min.js">
+      <publishTime>10/13/2017 17:57:48</publishTime>
+    </File>
+    <File Include="Content/TurnJs/lib/turn.html4.js">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/lib/turn.html4.min.js">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/lib/turn.js">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/lib/turn.min.js">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/lib/zoom.js">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/lib/zoom.min.js">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/PagePattern/001-wrinkled-wall.png">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/PagePattern/002-sandblasting.png">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/PagePattern/003-granulated-loom.png">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/PagePattern/004-polished-wood.png">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/PagePattern/005-wood-grain.png">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/PagePattern/006-fine-plaster.png">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/PagePattern/007-dark-loom.png">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/PagePattern/008-cover-book.png">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/01.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/02.jpg">
+      <publishTime>10/13/2017 17:57:49</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/03.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/04.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/05.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/06.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/1-large.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/1-regions.json">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/1-thumb.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/1.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/10-large.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/10-regions.json">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/10-thumb.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/10.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/11-large.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/11-regions.json">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/11-thumb.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/11.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/12-large.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/12-regions.json">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/12-thumb.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/12.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/2-large.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/2-regions.json">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/2-thumb.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/2.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/3-large.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/3-regions.json">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/3-thumb.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/3.jpg">
+      <publishTime>10/13/2017 17:57:50</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/4-large.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/4-regions.json">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/4-thumb.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/4.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/5-large.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/5-regions.json">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/5-thumb.jpg">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/5.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/6-large.jpg">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/6-regions.json">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/6-thumb.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/6.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/7-large.jpg">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/7-regions.json">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/7-thumb.jpg">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/7.jpg">
+      <publishTime>10/13/2017 17:57:51</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/8-large.jpg">
+      <publishTime>10/13/2017 17:57:53</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/8-regions.json">
+      <publishTime>10/13/2017 17:57:53</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/8-thumb.jpg">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/8.jpg">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/9-large.jpg">
+      <publishTime>10/13/2017 17:57:53</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/9-regions.json">
+      <publishTime>10/13/2017 17:57:53</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/9-thumb.jpg">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/9.jpg">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pages/preview.jpg">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pics/arrows.png">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pics/loader.gif">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pics/zoom-icons-editable.png">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pics/zoom-icons.png">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/pics/zoom.png">
+      <publishTime>10/13/2017 17:57:52</publishTime>
+    </File>
+    <File Include="Content/TurnJs/turnjs4-api-docs.pdf">
+      <publishTime>10/13/2017 17:57:47</publishTime>
+    </File>
+    <File Include="Data/CevaplarOrnekExcel.xlsx">
+      <publishTime>10/13/2017 17:57:53</publishTime>
+    </File>
+    <File Include="Data/DBModel.edmx.diagram">
+      <publishTime>10/13/2017 17:57:53</publishTime>
+    </File>
+    <File Include="Data/SideMenu.xml">
+      <publishTime>10/13/2017 17:57:54</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>10/13/2017 17:57:31</publishTime>
+    </File>
+    <File Include="Deneme/Sinav.aspx">
+      <publishTime>10/13/2017 17:57:54</publishTime>
+    </File>
+    <File Include="DenemeSinav.aspx">
+      <publishTime>10/13/2017 17:57:31</publishTime>
+    </File>
+    <File Include="Dergi/Oku.aspx">
+      <publishTime>10/13/2017 17:57:54</publishTime>
+    </File>
+    <File Include="EDergi.aspx">
+      <publishTime>10/13/2017 17:57:31</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>10/13/2017 17:57:31</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>10/13/2017 17:57:31</publishTime>
+    </File>
+    <File Include="google5168ceb804e6e1fd.html">
+      <publishTime>10/13/2017 17:57:31</publishTime>
+    </File>
+    <File Include="Hata.aspx">
+      <publishTime>10/13/2017 17:57:31</publishTime>
+    </File>
+    <File Include="Iletisim.aspx">
+      <publishTime>10/13/2017 17:57:31</publishTime>
+    </File>
+    <File Include="Kullanici/Detay.aspx">
+      <publishTime>10/13/2017 17:57:55</publishTime>
+    </File>
+    <File Include="Kullanici/GirisYonlendir.aspx">
+      <publishTime>10/13/2017 17:57:55</publishTime>
+    </File>
+    <File Include="Kullanici/Hatirlatma.aspx">
+      <publishTime>10/13/2017 17:57:55</publishTime>
+    </File>
+    <File Include="Kurs.aspx">
+      <publishTime>10/13/2017 17:57:31</publishTime>
+    </File>
+    <File Include="MasterPage/AdminMain.master">
+      <publishTime>10/13/2017 17:57:55</publishTime>
+    </File>
+    <File Include="MasterPage/AdminRoot.master">
+      <publishTime>10/13/2017 17:57:55</publishTime>
+    </File>
+    <File Include="MasterPage/SinavMain.master">
+      <publishTime>10/13/2017 17:57:55</publishTime>
+    </File>
+    <File Include="MasterPage/SinavRoot.Master">
+      <publishTime>10/13/2017 17:57:55</publishTime>
+    </File>
+    <File Include="MasterPage/SiteMain.master">
+      <publishTime>10/13/2017 17:57:55</publishTime>
+    </File>
+    <File Include="MasterPage/SiteRoot.master">
+      <publishTime>10/13/2017 17:57:56</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>10/13/2017 17:57:31</publishTime>
+    </File>
+    <File Include="robots.txt">
+      <publishTime>10/13/2017 17:57:31</publishTime>
+    </File>
+    <File Include="Satis/OOSPay.aspx">
+      <publishTime>10/13/2017 17:57:56</publishTime>
+    </File>
+    <File Include="Satis/OOSPayResults.aspx">
+      <publishTime>10/13/2017 17:57:56</publishTime>
+    </File>
+    <File Include="Services/BiSinavWcfService.svc">
+      <publishTime>10/13/2017 17:57:56</publishTime>
+    </File>
+    <File Include="sitemap.xml">
+      <publishTime>10/13/2017 17:57:32</publishTime>
+    </File>
+    <File Include="Uploads/empty.txt">
+      <publishTime>10/13/2017 17:57:56</publishTime>
+    </File>
+    <File Include="Uploads/Program/empty.txt">
+      <publishTime>10/13/2017 18:01:53</publishTime>
+    </File>
+    <File Include="Uploads/User/empty.txt">
+      <publishTime>10/13/2017 18:10:00</publishTime>
+    </File>
+    <File Include="UserControl/LoginLogout.ascx">
+      <publishTime>10/13/2017 18:10:00</publishTime>
+    </File>
+    <File Include="UserControl/PageFlipper.ascx">
+      <publishTime>10/13/2017 18:10:00</publishTime>
+    </File>
+    <File Include="UserControl/UserReport.ascx">
+      <publishTime>10/13/2017 18:10:00</publishTime>
+    </File>
+    <File Include="Video/Izle.aspx">
+      <publishTime>10/13/2017 18:10:00</publishTime>
+    </File>
+    <File Include="VideoDers.aspx">
+      <publishTime>10/13/2017 17:57:32</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>07/07/2020 23:13:15</publishTime>
+    </File>
+    <File Include="Yayin.aspx">
+      <publishTime>10/13/2017 17:57:32</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

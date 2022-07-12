@@ -1,0 +1,1486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Il">
+    <Key>
+      <PropertyRef Name="IlKey" />
+    </Key>
+    <Property Name="IlKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="IlKurs">
+    <Key>
+      <PropertyRef Name="IlKursKey" />
+    </Key>
+    <Property Name="IlKursKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IlKey" Type="int" Nullable="false" />
+    <Property Name="KursKey" Type="int" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kurs">
+    <Key>
+      <PropertyRef Name="KursKey" />
+    </Key>
+    <Property Name="KursKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Resim" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Link" Type="varchar" MaxLength="200" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Applications">
+    <Key>
+      <PropertyRef Name="ApplicationId" />
+    </Key>
+    <Property Name="ApplicationName" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="LoweredApplicationName" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="aspnet_Membership">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="PasswordFormat" Type="int" Nullable="false" />
+    <Property Name="PasswordSalt" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="MobilePIN" Type="nvarchar" MaxLength="16" />
+    <Property Name="Email" Type="nvarchar" MaxLength="256" />
+    <Property Name="LoweredEmail" Type="nvarchar" MaxLength="256" />
+    <Property Name="PasswordQuestion" Type="nvarchar" MaxLength="256" />
+    <Property Name="PasswordAnswer" Type="nvarchar" MaxLength="128" />
+    <Property Name="IsApproved" Type="bit" Nullable="false" />
+    <Property Name="IsLockedOut" Type="bit" Nullable="false" />
+    <Property Name="CreateDate" Type="datetime" Nullable="false" />
+    <Property Name="LastLoginDate" Type="datetime" Nullable="false" />
+    <Property Name="LastPasswordChangedDate" Type="datetime" Nullable="false" />
+    <Property Name="LastLockoutDate" Type="datetime" Nullable="false" />
+    <Property Name="FailedPasswordAttemptCount" Type="int" Nullable="false" />
+    <Property Name="FailedPasswordAttemptWindowStart" Type="datetime" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptCount" Type="int" Nullable="false" />
+    <Property Name="FailedPasswordAnswerAttemptWindowStart" Type="datetime" Nullable="false" />
+    <Property Name="Comment" Type="ntext" />
+    <Property Name="AyniSoruGelsinMi" Type="bit" />
+  </EntityType>
+  <EntityType Name="aspnet_Paths">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Path" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="LoweredPath" Type="nvarchar" MaxLength="256" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationAllUsers">
+    <Key>
+      <PropertyRef Name="PathId" />
+    </Key>
+    <Property Name="PathId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PageSettings" Type="image" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_PersonalizationPerUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PathId" Type="uniqueidentifier" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="PageSettings" Type="image" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Profile">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="PropertyNames" Type="ntext" Nullable="false" />
+    <Property Name="PropertyValuesString" Type="ntext" Nullable="false" />
+    <Property Name="PropertyValuesBinary" Type="image" Nullable="false" />
+    <Property Name="LastUpdatedDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Roles">
+    <Key>
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleName" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="LoweredRoleName" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="Description" Type="nvarchar" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="aspnet_SchemaVersions">
+    <Key>
+      <PropertyRef Name="Feature" />
+      <PropertyRef Name="CompatibleSchemaVersion" />
+    </Key>
+    <Property Name="Feature" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="CompatibleSchemaVersion" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="IsCurrentVersion" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_Users">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="ApplicationId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="UserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="LoweredUserName" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="MobileAlias" Type="nvarchar" MaxLength="16" />
+    <Property Name="IsAnonymous" Type="bit" Nullable="false" />
+    <Property Name="LastActivityDate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_UsersInRoles">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="RoleId" />
+    </Key>
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="RoleId" Type="uniqueidentifier" Nullable="false" />
+  </EntityType>
+  <EntityType Name="aspnet_WebEvent_Events">
+    <Key>
+      <PropertyRef Name="EventId" />
+    </Key>
+    <Property Name="EventId" Type="char" MaxLength="32" Nullable="false" />
+    <Property Name="EventTimeUtc" Type="datetime" Nullable="false" />
+    <Property Name="EventTime" Type="datetime" Nullable="false" />
+    <Property Name="EventType" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="EventSequence" Type="decimal" Precision="19" Scale="0" Nullable="false" />
+    <Property Name="EventOccurrence" Type="decimal" Precision="19" Scale="0" Nullable="false" />
+    <Property Name="EventCode" Type="int" Nullable="false" />
+    <Property Name="EventDetailCode" Type="int" Nullable="false" />
+    <Property Name="Message" Type="nvarchar" MaxLength="1024" />
+    <Property Name="ApplicationPath" Type="nvarchar" MaxLength="256" />
+    <Property Name="ApplicationVirtualPath" Type="nvarchar" MaxLength="256" />
+    <Property Name="MachineName" Type="nvarchar" MaxLength="256" Nullable="false" />
+    <Property Name="RequestUrl" Type="nvarchar" MaxLength="1024" />
+    <Property Name="ExceptionType" Type="nvarchar" MaxLength="256" />
+    <Property Name="Details" Type="ntext" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="Icerik">
+    <Key>
+      <PropertyRef Name="IcerikKey" />
+    </Key>
+    <Property Name="IcerikKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Link" Type="varchar" MaxLength="200" />
+    <Property Name="Tarih" Type="date" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ilan">
+    <Key>
+      <PropertyRef Name="IlanKey" />
+    </Key>
+    <Property Name="IlanKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Link" Type="varchar" MaxLength="200" />
+    <Property Name="Tarih" Type="date" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Manset">
+    <Key>
+      <PropertyRef Name="MansetKey" />
+    </Key>
+    <Property Name="MansetKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Baslik" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Link" Type="varchar" MaxLength="200" />
+    <Property Name="Resim" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Dagitim">
+    <Key>
+      <PropertyRef Name="DagitimKey" />
+    </Key>
+    <Property Name="DagitimKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ServisKey" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="Kod" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="KullanildiMi" Type="bit" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Servis">
+    <Key>
+      <PropertyRef Name="ServisKey" />
+    </Key>
+    <Property Name="ServisKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SirketKey" Type="int" Nullable="false" />
+    <Property Name="ServisTipKey" Type="int" Nullable="false" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Kod" Type="varchar" MaxLength="50" />
+    <Property Name="Limit" Type="int" Nullable="false" />
+    <Property Name="Baslangic" Type="datetime" Nullable="false" />
+    <Property Name="Bitis" Type="datetime" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ServisDeneme">
+    <Key>
+      <PropertyRef Name="ServisDenemeKey" />
+    </Key>
+    <Property Name="ServisDenemeKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ServisKey" Type="int" Nullable="false" />
+    <Property Name="DenemeKey" Type="int" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ServisEDergi">
+    <Key>
+      <PropertyRef Name="ServisEDergiKey" />
+    </Key>
+    <Property Name="ServisEDergiKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ServisKey" Type="int" Nullable="false" />
+    <Property Name="EDergiKey" Type="int" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ServisTip">
+    <Key>
+      <PropertyRef Name="ServisTipKey" />
+    </Key>
+    <Property Name="ServisTipKey" Type="int" Nullable="false" />
+    <Property Name="ServisTipAdi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="100" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sirket">
+    <Key>
+      <PropertyRef Name="SirketKey" />
+    </Key>
+    <Property Name="SirketKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ayar">
+    <Key>
+      <PropertyRef Name="AyarKey" />
+    </Key>
+    <Property Name="AyarKey" Type="int" Nullable="false" />
+    <Property Name="MailHost" Type="varchar" MaxLength="50" />
+    <Property Name="MailPort" Type="int" />
+    <Property Name="MailKullaniciAdi" Type="varchar" MaxLength="50" />
+    <Property Name="MailSifre" Type="varchar" MaxLength="50" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Log">
+    <Key>
+      <PropertyRef Name="LogKey" />
+    </Key>
+    <Property Name="LogKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Tarih" Type="datetime" />
+    <Property Name="Message" Type="varchar(max)" />
+    <Property Name="Source" Type="varchar(max)" />
+    <Property Name="StackTrace" Type="varchar(max)" />
+    <Property Name="ExceptionType" Type="varchar(max)" />
+    <Property Name="UserId" Type="uniqueidentifier" />
+    <Property Name="Url" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="BolgeTip">
+    <Key>
+      <PropertyRef Name="BolgeTipKey" />
+    </Key>
+    <Property Name="BolgeTipKey" Type="int" Nullable="false" />
+    <Property Name="BolgeTipAdi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="100" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tanitim">
+    <Key>
+      <PropertyRef Name="TanitimKey" />
+    </Key>
+    <Property Name="TanitimKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="BolgeTipKey" Type="int" Nullable="false" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Resim" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Link" Type="varchar" MaxLength="200" />
+    <Property Name="BaslangicTarih" Type="datetime" Nullable="false" />
+    <Property Name="BitisTarih" Type="datetime" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="BankaGaranti">
+    <Key>
+      <PropertyRef Name="BankaGarantiKey" />
+    </Key>
+    <Property Name="BankaGarantiKey" Type="int" Nullable="false" />
+    <Property Name="StoreKey" Type="varchar" MaxLength="100" />
+    <Property Name="ProvisionPassword" Type="varchar" MaxLength="100" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="100" />
+    <Property Name="TerminalId" Type="varchar" MaxLength="100" />
+    <Property Name="TerminalUserId" Type="varchar" MaxLength="100" />
+    <Property Name="TerminalMerchantId" Type="varchar" MaxLength="100" />
+    <Property Name="CustomerIpAddress" Type="varchar" MaxLength="100" />
+    <Property Name="CustomerEmailAddress" Type="varchar" MaxLength="100" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Siparis">
+    <Key>
+      <PropertyRef Name="SiparisKey" />
+    </Key>
+    <Property Name="SiparisKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiparisDurumTipNo" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="Tarih" Type="datetime" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SiparisDeneme">
+    <Key>
+      <PropertyRef Name="SiparisDenemeKey" />
+    </Key>
+    <Property Name="SiparisDenemeKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiparisKey" Type="int" Nullable="false" />
+    <Property Name="DenemeKey" Type="int" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SiparisDurumTip">
+    <Key>
+      <PropertyRef Name="SiparisDurumTipNo" />
+    </Key>
+    <Property Name="SiparisDurumTipNo" Type="int" Nullable="false" />
+    <Property Name="SiparisDurumTipAdi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="100" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SiparisEDergi">
+    <Key>
+      <PropertyRef Name="SiparisEDergiKey" />
+    </Key>
+    <Property Name="SiparisEDergiKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SiparisKey" Type="int" Nullable="false" />
+    <Property Name="EDergiKey" Type="int" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Alan">
+    <Key>
+      <PropertyRef Name="AlanKey" />
+    </Key>
+    <Property Name="AlanKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Resim" Type="image" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Deneme">
+    <Key>
+      <PropertyRef Name="DenemeKey" />
+    </Key>
+    <Property Name="DenemeKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AlanKey" Type="int" Nullable="false" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Sure" Type="int" Nullable="false" />
+    <Property Name="Resim" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Link" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Fiyat" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="YeniMi" Type="bit" Nullable="false" />
+    <Property Name="DemoMu" Type="bit" Nullable="false" />
+    <Property Name="HediyeMi" Type="bit" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DenemeKullanici">
+    <Key>
+      <PropertyRef Name="DenemeKullaniciKey" />
+    </Key>
+    <Property Name="DenemeKullaniciKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DenemeKey" Type="int" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="AktifSoruKey" Type="int" />
+    <Property Name="BaslangicZamani" Type="datetime" Nullable="false" />
+    <Property Name="BitisZamani" Type="datetime" Nullable="false" />
+    <Property Name="GecenSure" Type="int" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DenemeKullaniciSoru">
+    <Key>
+      <PropertyRef Name="DenemeKullaniciSoruKey" />
+    </Key>
+    <Property Name="DenemeKullaniciSoruKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DenemeKullaniciKey" Type="int" Nullable="false" />
+    <Property Name="SoruKey" Type="int" Nullable="false" />
+    <Property Name="CevapSik" Type="char" MaxLength="1" />
+    <Property Name="IslemZamani" Type="datetime" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Ders">
+    <Key>
+      <PropertyRef Name="DersKey" />
+    </Key>
+    <Property Name="DersKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="AlanKey" Type="int" Nullable="false" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+    <Property Name="Resim" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Oturum">
+    <Key>
+      <PropertyRef Name="OturumKey" />
+    </Key>
+    <Property Name="OturumKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Baslangic" Type="datetime" Nullable="false" />
+    <Property Name="Bitis" Type="datetime" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OturumDeneme">
+    <Key>
+      <PropertyRef Name="OturumDenemeKey" />
+    </Key>
+    <Property Name="OturumDenemeKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DenemeKey" Type="int" Nullable="false" />
+    <Property Name="OturumKey" Type="int" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="SonucDetay">
+    <Key>
+      <PropertyRef Name="SonucDetayKey" />
+    </Key>
+    <Property Name="SonucDetayKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserId" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="DersKey" Type="int" Nullable="false" />
+    <Property Name="DenemeKullaniciKey" Type="int" />
+    <Property Name="DogruSayisi" Type="int" Nullable="false" />
+    <Property Name="YanlisSayisi" Type="int" Nullable="false" />
+    <Property Name="BosSayisi" Type="int" Nullable="false" />
+    <Property Name="KullanilanSure" Type="int" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Soru">
+    <Key>
+      <PropertyRef Name="SoruKey" />
+    </Key>
+    <Property Name="SoruKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DersKey" Type="int" Nullable="false" />
+    <Property Name="DenemeKey" Type="int" />
+    <Property Name="SadeceDeneme" Type="bit" />
+    <Property Name="DogruSik" Type="char" MaxLength="1" Nullable="false" />
+    <Property Name="SikSayisi" Type="tinyint" Nullable="false" />
+    <Property Name="Soru" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="Aciklama" Type="nvarchar(max)" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kayit">
+    <Key>
+      <PropertyRef Name="KayitKey" />
+    </Key>
+    <Property Name="KayitKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KayitKategoriKey" Type="int" Nullable="false" />
+    <Property Name="Baslik" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Aciklama" Type="varchar" MaxLength="500" />
+    <Property Name="Resim" Type="varchar" MaxLength="50" />
+    <Property Name="EmbedCode" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KayitKategori">
+    <Key>
+      <PropertyRef Name="KayitKategoriKey" />
+    </Key>
+    <Property Name="KayitKategoriKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EDergi">
+    <Key>
+      <PropertyRef Name="EDergiKey" />
+    </Key>
+    <Property Name="EDergiKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Resim" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Link" Type="varchar" MaxLength="200" Nullable="false" />
+    <Property Name="Fiyat" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="YeniMi" Type="bit" Nullable="false" />
+    <Property Name="DemoMu" Type="bit" Nullable="false" />
+    <Property Name="HediyeMi" Type="bit" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="EDergiSayfa">
+    <Key>
+      <PropertyRef Name="EDergiSayfaKey" />
+    </Key>
+    <Property Name="EDergiSayfaKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EDergiKey" Type="int" Nullable="false" />
+    <Property Name="Resim" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kategori">
+    <Key>
+      <PropertyRef Name="KategoriKey" />
+    </Key>
+    <Property Name="KategoriKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="KategoriKitap">
+    <Key>
+      <PropertyRef Name="KategoriKitapKey" />
+    </Key>
+    <Property Name="KategoriKitapKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KitapKey" Type="int" Nullable="false" />
+    <Property Name="KategoriKey" Type="int" Nullable="false" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Kitap">
+    <Key>
+      <PropertyRef Name="KitapKey" />
+    </Key>
+    <Property Name="KitapKey" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adi" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Resim" Type="varchar" MaxLength="50" />
+    <Property Name="Link" Type="varchar" MaxLength="200" />
+    <Property Name="KayitKisiKey" Type="uniqueidentifier" />
+    <Property Name="KayitTarih" Type="datetime" />
+    <Property Name="GuncelleKisiKey" Type="uniqueidentifier" />
+    <Property Name="GuncelleTarih" Type="datetime" />
+    <Property Name="Sira" Type="int" Nullable="false" />
+    <Property Name="AktifMi" Type="bit" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__aspnet_Me__Appli__04E4BC85">
+    <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Membership" Type="Self.aspnet_Membership" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Me__UserI__05D8E0BE">
+    <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_Membership" Type="Self.aspnet_Membership" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Membership">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pa__Appli__06CD04F7">
+    <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Paths" Type="Self.aspnet_Paths" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Paths">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__07C12930">
+    <End Role="aspnet_Paths" Type="Self.aspnet_Paths" Multiplicity="1" />
+    <End Role="aspnet_PersonalizationAllUsers" Type="Self.aspnet_PersonalizationAllUsers" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationAllUsers">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__PathI__08B54D69">
+    <End Role="aspnet_Paths" Type="Self.aspnet_Paths" Multiplicity="0..1" />
+    <End Role="aspnet_PersonalizationPerUser" Type="Self.aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Paths">
+        <PropertyRef Name="PathId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="PathId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pe__UserI__09A971A2">
+    <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="0..1" />
+    <End Role="aspnet_PersonalizationPerUser" Type="Self.aspnet_PersonalizationPerUser" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_PersonalizationPerUser">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Pr__UserI__0A9D95DB">
+    <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_Profile" Type="Self.aspnet_Profile" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_Profile">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Ro__Appli__0B91BA14">
+    <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Roles" Type="Self.aspnet_Roles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Roles">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__Appli__0C85DE4D">
+    <End Role="aspnet_Applications" Type="Self.aspnet_Applications" Multiplicity="1" />
+    <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Applications">
+        <PropertyRef Name="ApplicationId" />
+      </Principal>
+      <Dependent Role="aspnet_Users">
+        <PropertyRef Name="ApplicationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__RoleI__0D7A0286">
+    <End Role="aspnet_Roles" Type="Self.aspnet_Roles" Multiplicity="1" />
+    <End Role="aspnet_UsersInRoles" Type="Self.aspnet_UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Roles">
+        <PropertyRef Name="RoleId" />
+      </Principal>
+      <Dependent Role="aspnet_UsersInRoles">
+        <PropertyRef Name="RoleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__aspnet_Us__UserI__0E6E26BF">
+    <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1" />
+    <End Role="aspnet_UsersInRoles" Type="Self.aspnet_UsersInRoles" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="aspnet_UsersInRoles">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dagitim_aspnet_Users">
+    <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="0..1" />
+    <End Role="Dagitim" Type="Self.Dagitim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Dagitim">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Dagitim_Servis">
+    <End Role="Servis" Type="Self.Servis" Multiplicity="1" />
+    <End Role="Dagitim" Type="Self.Dagitim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servis">
+        <PropertyRef Name="ServisKey" />
+      </Principal>
+      <Dependent Role="Dagitim">
+        <PropertyRef Name="ServisKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Deneme_Alan">
+    <End Role="Alan" Type="Self.Alan" Multiplicity="1" />
+    <End Role="Deneme" Type="Self.Deneme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alan">
+        <PropertyRef Name="AlanKey" />
+      </Principal>
+      <Dependent Role="Deneme">
+        <PropertyRef Name="AlanKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DENEME_DERS_DENEME_ALAN">
+    <End Role="Alan" Type="Self.Alan" Multiplicity="1" />
+    <End Role="Ders" Type="Self.Ders" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Alan">
+        <PropertyRef Name="AlanKey" />
+      </Principal>
+      <Dependent Role="Ders">
+        <PropertyRef Name="AlanKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DENEME_SORU_DENEME_DERS">
+    <End Role="Ders" Type="Self.Ders" Multiplicity="1" />
+    <End Role="Soru" Type="Self.Soru" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ders">
+        <PropertyRef Name="DersKey" />
+      </Principal>
+      <Dependent Role="Soru">
+        <PropertyRef Name="DersKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DenemeKullanici_aspnet_Users">
+    <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1" />
+    <End Role="DenemeKullanici" Type="Self.DenemeKullanici" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="DenemeKullanici">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DenemeKullanici_Deneme">
+    <End Role="Deneme" Type="Self.Deneme" Multiplicity="1" />
+    <End Role="DenemeKullanici" Type="Self.DenemeKullanici" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deneme">
+        <PropertyRef Name="DenemeKey" />
+      </Principal>
+      <Dependent Role="DenemeKullanici">
+        <PropertyRef Name="DenemeKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DenemeKullanici_Soru">
+    <End Role="Soru" Type="Self.Soru" Multiplicity="0..1" />
+    <End Role="DenemeKullanici" Type="Self.DenemeKullanici" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Soru">
+        <PropertyRef Name="SoruKey" />
+      </Principal>
+      <Dependent Role="DenemeKullanici">
+        <PropertyRef Name="AktifSoruKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DenemeKullaniciSoru_DenemeKullanici">
+    <End Role="DenemeKullanici" Type="Self.DenemeKullanici" Multiplicity="1" />
+    <End Role="DenemeKullaniciSoru" Type="Self.DenemeKullaniciSoru" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DenemeKullanici">
+        <PropertyRef Name="DenemeKullaniciKey" />
+      </Principal>
+      <Dependent Role="DenemeKullaniciSoru">
+        <PropertyRef Name="DenemeKullaniciKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_DenemeKullaniciSoru_Soru">
+    <End Role="Soru" Type="Self.Soru" Multiplicity="1" />
+    <End Role="DenemeKullaniciSoru" Type="Self.DenemeKullaniciSoru" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Soru">
+        <PropertyRef Name="SoruKey" />
+      </Principal>
+      <Dependent Role="DenemeKullaniciSoru">
+        <PropertyRef Name="SoruKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Ders_Kategori">
+    <End Role="KayitKategori" Type="Self.KayitKategori" Multiplicity="1" />
+    <End Role="Kayit" Type="Self.Kayit" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KayitKategori">
+        <PropertyRef Name="KayitKategoriKey" />
+      </Principal>
+      <Dependent Role="Kayit">
+        <PropertyRef Name="KayitKategoriKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_EDergiSayfa_EDergi">
+    <End Role="EDergi" Type="Self.EDergi" Multiplicity="1" />
+    <End Role="EDergiSayfa" Type="Self.EDergiSayfa" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EDergi">
+        <PropertyRef Name="EDergiKey" />
+      </Principal>
+      <Dependent Role="EDergiSayfa">
+        <PropertyRef Name="EDergiKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IlKurs_Il">
+    <End Role="Il" Type="Self.Il" Multiplicity="1" />
+    <End Role="IlKurs" Type="Self.IlKurs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Il">
+        <PropertyRef Name="IlKey" />
+      </Principal>
+      <Dependent Role="IlKurs">
+        <PropertyRef Name="IlKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_IlKurs_Kurs">
+    <End Role="Kurs" Type="Self.Kurs" Multiplicity="1" />
+    <End Role="IlKurs" Type="Self.IlKurs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kurs">
+        <PropertyRef Name="KursKey" />
+      </Principal>
+      <Dependent Role="IlKurs">
+        <PropertyRef Name="KursKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KategoriKitap_Kategori">
+    <End Role="Kategori" Type="Self.Kategori" Multiplicity="1" />
+    <End Role="KategoriKitap" Type="Self.KategoriKitap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kategori">
+        <PropertyRef Name="KategoriKey" />
+      </Principal>
+      <Dependent Role="KategoriKitap">
+        <PropertyRef Name="KategoriKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KategoriKitap_Kitap">
+    <End Role="Kitap" Type="Self.Kitap" Multiplicity="1" />
+    <End Role="KategoriKitap" Type="Self.KategoriKitap" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Kitap">
+        <PropertyRef Name="KitapKey" />
+      </Principal>
+      <Dependent Role="KategoriKitap">
+        <PropertyRef Name="KitapKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OturumDeneme_Deneme">
+    <End Role="Deneme" Type="Self.Deneme" Multiplicity="1" />
+    <End Role="OturumDeneme" Type="Self.OturumDeneme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deneme">
+        <PropertyRef Name="DenemeKey" />
+      </Principal>
+      <Dependent Role="OturumDeneme">
+        <PropertyRef Name="DenemeKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_OturumDeneme_Oturum">
+    <End Role="Oturum" Type="Self.Oturum" Multiplicity="1" />
+    <End Role="OturumDeneme" Type="Self.OturumDeneme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Oturum">
+        <PropertyRef Name="OturumKey" />
+      </Principal>
+      <Dependent Role="OturumDeneme">
+        <PropertyRef Name="OturumKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Servis_ServisTip">
+    <End Role="ServisTip" Type="Self.ServisTip" Multiplicity="1" />
+    <End Role="Servis" Type="Self.Servis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ServisTip">
+        <PropertyRef Name="ServisTipKey" />
+      </Principal>
+      <Dependent Role="Servis">
+        <PropertyRef Name="ServisTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Servis_Sirket">
+    <End Role="Sirket" Type="Self.Sirket" Multiplicity="1" />
+    <End Role="Servis" Type="Self.Servis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sirket">
+        <PropertyRef Name="SirketKey" />
+      </Principal>
+      <Dependent Role="Servis">
+        <PropertyRef Name="SirketKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServisDeneme_Deneme">
+    <End Role="Deneme" Type="Self.Deneme" Multiplicity="1" />
+    <End Role="ServisDeneme" Type="Self.ServisDeneme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deneme">
+        <PropertyRef Name="DenemeKey" />
+      </Principal>
+      <Dependent Role="ServisDeneme">
+        <PropertyRef Name="DenemeKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServisDeneme_Servis">
+    <End Role="Servis" Type="Self.Servis" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ServisDeneme" Type="Self.ServisDeneme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servis">
+        <PropertyRef Name="ServisKey" />
+      </Principal>
+      <Dependent Role="ServisDeneme">
+        <PropertyRef Name="ServisKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServisEDergi_EDergi">
+    <End Role="EDergi" Type="Self.EDergi" Multiplicity="1" />
+    <End Role="ServisEDergi" Type="Self.ServisEDergi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EDergi">
+        <PropertyRef Name="EDergiKey" />
+      </Principal>
+      <Dependent Role="ServisEDergi">
+        <PropertyRef Name="EDergiKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ServisEDergi_Servis">
+    <End Role="Servis" Type="Self.Servis" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="ServisEDergi" Type="Self.ServisEDergi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Servis">
+        <PropertyRef Name="ServisKey" />
+      </Principal>
+      <Dependent Role="ServisEDergi">
+        <PropertyRef Name="ServisKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Siparis_aspnet_Users">
+    <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1" />
+    <End Role="Siparis" Type="Self.Siparis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="Siparis">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Siparis_SiparisTip">
+    <End Role="SiparisDurumTip" Type="Self.SiparisDurumTip" Multiplicity="1" />
+    <End Role="Siparis" Type="Self.Siparis" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SiparisDurumTip">
+        <PropertyRef Name="SiparisDurumTipNo" />
+      </Principal>
+      <Dependent Role="Siparis">
+        <PropertyRef Name="SiparisDurumTipNo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SiparisDeneme_Deneme">
+    <End Role="Deneme" Type="Self.Deneme" Multiplicity="1" />
+    <End Role="SiparisDeneme" Type="Self.SiparisDeneme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deneme">
+        <PropertyRef Name="DenemeKey" />
+      </Principal>
+      <Dependent Role="SiparisDeneme">
+        <PropertyRef Name="DenemeKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SiparisDeneme_Siparis">
+    <End Role="Siparis" Type="Self.Siparis" Multiplicity="1" />
+    <End Role="SiparisDeneme" Type="Self.SiparisDeneme" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Siparis">
+        <PropertyRef Name="SiparisKey" />
+      </Principal>
+      <Dependent Role="SiparisDeneme">
+        <PropertyRef Name="SiparisKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SiparisEDergi_EDergi">
+    <End Role="EDergi" Type="Self.EDergi" Multiplicity="1" />
+    <End Role="SiparisEDergi" Type="Self.SiparisEDergi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EDergi">
+        <PropertyRef Name="EDergiKey" />
+      </Principal>
+      <Dependent Role="SiparisEDergi">
+        <PropertyRef Name="EDergiKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SiparisEDergi_Siparis">
+    <End Role="Siparis" Type="Self.Siparis" Multiplicity="1" />
+    <End Role="SiparisEDergi" Type="Self.SiparisEDergi" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Siparis">
+        <PropertyRef Name="SiparisKey" />
+      </Principal>
+      <Dependent Role="SiparisEDergi">
+        <PropertyRef Name="SiparisKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sonuc_DenemeKullanici">
+    <End Role="DenemeKullanici" Type="Self.DenemeKullanici" Multiplicity="0..1" />
+    <End Role="SonucDetay" Type="Self.SonucDetay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="DenemeKullanici">
+        <PropertyRef Name="DenemeKullaniciKey" />
+      </Principal>
+      <Dependent Role="SonucDetay">
+        <PropertyRef Name="DenemeKullaniciKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sonuc_Ders">
+    <End Role="Ders" Type="Self.Ders" Multiplicity="1" />
+    <End Role="SonucDetay" Type="Self.SonucDetay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Ders">
+        <PropertyRef Name="DersKey" />
+      </Principal>
+      <Dependent Role="SonucDetay">
+        <PropertyRef Name="DersKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SonucDetay_aspnet_Users">
+    <End Role="aspnet_Users" Type="Self.aspnet_Users" Multiplicity="1" />
+    <End Role="SonucDetay" Type="Self.SonucDetay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="aspnet_Users">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="SonucDetay">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Soru_Deneme">
+    <End Role="Deneme" Type="Self.Deneme" Multiplicity="0..1" />
+    <End Role="Soru" Type="Self.Soru" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Deneme">
+        <PropertyRef Name="DenemeKey" />
+      </Principal>
+      <Dependent Role="Soru">
+        <PropertyRef Name="DenemeKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tanitim_Bolge">
+    <End Role="BolgeTip" Type="Self.BolgeTip" Multiplicity="1" />
+    <End Role="Tanitim" Type="Self.Tanitim" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BolgeTip">
+        <PropertyRef Name="BolgeTipKey" />
+      </Principal>
+      <Dependent Role="Tanitim">
+        <PropertyRef Name="BolgeTipKey" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DBModelStoreContainer">
+    <EntitySet Name="Il" EntityType="Self.Il" Schema="Akademi" store:Type="Tables" />
+    <EntitySet Name="IlKurs" EntityType="Self.IlKurs" Schema="Akademi" store:Type="Tables" />
+    <EntitySet Name="Kurs" EntityType="Self.Kurs" Schema="Akademi" store:Type="Tables" />
+    <EntitySet Name="aspnet_Applications" EntityType="Self.aspnet_Applications" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="aspnet_Membership" EntityType="Self.aspnet_Membership" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="aspnet_Paths" EntityType="Self.aspnet_Paths" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="aspnet_PersonalizationAllUsers" EntityType="Self.aspnet_PersonalizationAllUsers" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="aspnet_PersonalizationPerUser" EntityType="Self.aspnet_PersonalizationPerUser" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="aspnet_Profile" EntityType="Self.aspnet_Profile" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="aspnet_Roles" EntityType="Self.aspnet_Roles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="aspnet_SchemaVersions" EntityType="Self.aspnet_SchemaVersions" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="aspnet_Users" EntityType="Self.aspnet_Users" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="aspnet_UsersInRoles" EntityType="Self.aspnet_UsersInRoles" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="aspnet_WebEvent_Events" EntityType="Self.aspnet_WebEvent_Events" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Icerik" EntityType="Self.Icerik" Schema="Haber" store:Type="Tables" />
+    <EntitySet Name="Ilan" EntityType="Self.Ilan" Schema="Haber" store:Type="Tables" />
+    <EntitySet Name="Manset" EntityType="Self.Manset" Schema="Haber" store:Type="Tables" />
+    <EntitySet Name="Dagitim" EntityType="Self.Dagitim" Schema="Kod" store:Type="Tables" />
+    <EntitySet Name="Servis" EntityType="Self.Servis" Schema="Kod" store:Type="Tables" />
+    <EntitySet Name="ServisDeneme" EntityType="Self.ServisDeneme" Schema="Kod" store:Type="Tables" />
+    <EntitySet Name="ServisEDergi" EntityType="Self.ServisEDergi" Schema="Kod" store:Type="Tables" />
+    <EntitySet Name="ServisTip" EntityType="Self.ServisTip" Schema="Kod" store:Type="Tables" />
+    <EntitySet Name="Sirket" EntityType="Self.Sirket" Schema="Kod" store:Type="Tables" />
+    <EntitySet Name="Ayar" EntityType="Self.Ayar" Schema="Program" store:Type="Tables" />
+    <EntitySet Name="Log" EntityType="Self.Log" Schema="Program" store:Type="Tables" />
+    <EntitySet Name="BolgeTip" EntityType="Self.BolgeTip" Schema="Reklam" store:Type="Tables" />
+    <EntitySet Name="Tanitim" EntityType="Self.Tanitim" Schema="Reklam" store:Type="Tables" />
+    <EntitySet Name="BankaGaranti" EntityType="Self.BankaGaranti" Schema="Satis" store:Type="Tables" />
+    <EntitySet Name="Siparis" EntityType="Self.Siparis" Schema="Satis" store:Type="Tables" />
+    <EntitySet Name="SiparisDeneme" EntityType="Self.SiparisDeneme" Schema="Satis" store:Type="Tables" />
+    <EntitySet Name="SiparisDurumTip" EntityType="Self.SiparisDurumTip" Schema="Satis" store:Type="Tables" />
+    <EntitySet Name="SiparisEDergi" EntityType="Self.SiparisEDergi" Schema="Satis" store:Type="Tables" />
+    <EntitySet Name="Alan" EntityType="Self.Alan" Schema="Sinav" store:Type="Tables" />
+    <EntitySet Name="Deneme" EntityType="Self.Deneme" Schema="Sinav" store:Type="Tables" />
+    <EntitySet Name="DenemeKullanici" EntityType="Self.DenemeKullanici" Schema="Sinav" store:Type="Tables" />
+    <EntitySet Name="DenemeKullaniciSoru" EntityType="Self.DenemeKullaniciSoru" Schema="Sinav" store:Type="Tables" />
+    <EntitySet Name="Ders" EntityType="Self.Ders" Schema="Sinav" store:Type="Tables" />
+    <EntitySet Name="Oturum" EntityType="Self.Oturum" Schema="Sinav" store:Type="Tables" />
+    <EntitySet Name="OturumDeneme" EntityType="Self.OturumDeneme" Schema="Sinav" store:Type="Tables" />
+    <EntitySet Name="SonucDetay" EntityType="Self.SonucDetay" Schema="Sinav" store:Type="Tables" />
+    <EntitySet Name="Soru" EntityType="Self.Soru" Schema="Sinav" store:Type="Tables" />
+    <EntitySet Name="Kayit" EntityType="Self.Kayit" Schema="Video" store:Type="Tables" />
+    <EntitySet Name="KayitKategori" EntityType="Self.KayitKategori" Schema="Video" store:Type="Tables" />
+    <EntitySet Name="EDergi" EntityType="Self.EDergi" Schema="Yayin" store:Type="Tables" />
+    <EntitySet Name="EDergiSayfa" EntityType="Self.EDergiSayfa" Schema="Yayin" store:Type="Tables" />
+    <EntitySet Name="Kategori" EntityType="Self.Kategori" Schema="Yayin" store:Type="Tables" />
+    <EntitySet Name="KategoriKitap" EntityType="Self.KategoriKitap" Schema="Yayin" store:Type="Tables" />
+    <EntitySet Name="Kitap" EntityType="Self.Kitap" Schema="Yayin" store:Type="Tables" />
+    <AssociationSet Name="FK__aspnet_Me__Appli__04E4BC85" Association="Self.FK__aspnet_Me__Appli__04E4BC85">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Me__UserI__05D8E0BE" Association="Self.FK__aspnet_Me__UserI__05D8E0BE">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Membership" EntitySet="aspnet_Membership" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pa__Appli__06CD04F7" Association="Self.FK__aspnet_Pa__Appli__06CD04F7">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__07C12930" Association="Self.FK__aspnet_Pe__PathI__07C12930">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationAllUsers" EntitySet="aspnet_PersonalizationAllUsers" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__PathI__08B54D69" Association="Self.FK__aspnet_Pe__PathI__08B54D69">
+      <End Role="aspnet_Paths" EntitySet="aspnet_Paths" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pe__UserI__09A971A2" Association="Self.FK__aspnet_Pe__UserI__09A971A2">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_PersonalizationPerUser" EntitySet="aspnet_PersonalizationPerUser" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Pr__UserI__0A9D95DB" Association="Self.FK__aspnet_Pr__UserI__0A9D95DB">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_Profile" EntitySet="aspnet_Profile" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Ro__Appli__0B91BA14" Association="Self.FK__aspnet_Ro__Appli__0B91BA14">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__Appli__0C85DE4D" Association="Self.FK__aspnet_Us__Appli__0C85DE4D">
+      <End Role="aspnet_Applications" EntitySet="aspnet_Applications" />
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__RoleI__0D7A0286" Association="Self.FK__aspnet_Us__RoleI__0D7A0286">
+      <End Role="aspnet_Roles" EntitySet="aspnet_Roles" />
+      <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK__aspnet_Us__UserI__0E6E26BF" Association="Self.FK__aspnet_Us__UserI__0E6E26BF">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="aspnet_UsersInRoles" EntitySet="aspnet_UsersInRoles" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dagitim_aspnet_Users" Association="Self.FK_Dagitim_aspnet_Users">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="Dagitim" EntitySet="Dagitim" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Dagitim_Servis" Association="Self.FK_Dagitim_Servis">
+      <End Role="Servis" EntitySet="Servis" />
+      <End Role="Dagitim" EntitySet="Dagitim" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Deneme_Alan" Association="Self.FK_Deneme_Alan">
+      <End Role="Alan" EntitySet="Alan" />
+      <End Role="Deneme" EntitySet="Deneme" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DENEME_DERS_DENEME_ALAN" Association="Self.FK_DENEME_DERS_DENEME_ALAN">
+      <End Role="Alan" EntitySet="Alan" />
+      <End Role="Ders" EntitySet="Ders" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DENEME_SORU_DENEME_DERS" Association="Self.FK_DENEME_SORU_DENEME_DERS">
+      <End Role="Ders" EntitySet="Ders" />
+      <End Role="Soru" EntitySet="Soru" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DenemeKullanici_aspnet_Users" Association="Self.FK_DenemeKullanici_aspnet_Users">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="DenemeKullanici" EntitySet="DenemeKullanici" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DenemeKullanici_Deneme" Association="Self.FK_DenemeKullanici_Deneme">
+      <End Role="Deneme" EntitySet="Deneme" />
+      <End Role="DenemeKullanici" EntitySet="DenemeKullanici" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DenemeKullanici_Soru" Association="Self.FK_DenemeKullanici_Soru">
+      <End Role="Soru" EntitySet="Soru" />
+      <End Role="DenemeKullanici" EntitySet="DenemeKullanici" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DenemeKullaniciSoru_DenemeKullanici" Association="Self.FK_DenemeKullaniciSoru_DenemeKullanici">
+      <End Role="DenemeKullanici" EntitySet="DenemeKullanici" />
+      <End Role="DenemeKullaniciSoru" EntitySet="DenemeKullaniciSoru" />
+    </AssociationSet>
+    <AssociationSet Name="FK_DenemeKullaniciSoru_Soru" Association="Self.FK_DenemeKullaniciSoru_Soru">
+      <End Role="Soru" EntitySet="Soru" />
+      <End Role="DenemeKullaniciSoru" EntitySet="DenemeKullaniciSoru" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Ders_Kategori" Association="Self.FK_Ders_Kategori">
+      <End Role="KayitKategori" EntitySet="KayitKategori" />
+      <End Role="Kayit" EntitySet="Kayit" />
+    </AssociationSet>
+    <AssociationSet Name="FK_EDergiSayfa_EDergi" Association="Self.FK_EDergiSayfa_EDergi">
+      <End Role="EDergi" EntitySet="EDergi" />
+      <End Role="EDergiSayfa" EntitySet="EDergiSayfa" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IlKurs_Il" Association="Self.FK_IlKurs_Il">
+      <End Role="Il" EntitySet="Il" />
+      <End Role="IlKurs" EntitySet="IlKurs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_IlKurs_Kurs" Association="Self.FK_IlKurs_Kurs">
+      <End Role="Kurs" EntitySet="Kurs" />
+      <End Role="IlKurs" EntitySet="IlKurs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KategoriKitap_Kategori" Association="Self.FK_KategoriKitap_Kategori">
+      <End Role="Kategori" EntitySet="Kategori" />
+      <End Role="KategoriKitap" EntitySet="KategoriKitap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KategoriKitap_Kitap" Association="Self.FK_KategoriKitap_Kitap">
+      <End Role="Kitap" EntitySet="Kitap" />
+      <End Role="KategoriKitap" EntitySet="KategoriKitap" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OturumDeneme_Deneme" Association="Self.FK_OturumDeneme_Deneme">
+      <End Role="Deneme" EntitySet="Deneme" />
+      <End Role="OturumDeneme" EntitySet="OturumDeneme" />
+    </AssociationSet>
+    <AssociationSet Name="FK_OturumDeneme_Oturum" Association="Self.FK_OturumDeneme_Oturum">
+      <End Role="Oturum" EntitySet="Oturum" />
+      <End Role="OturumDeneme" EntitySet="OturumDeneme" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Servis_ServisTip" Association="Self.FK_Servis_ServisTip">
+      <End Role="ServisTip" EntitySet="ServisTip" />
+      <End Role="Servis" EntitySet="Servis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Servis_Sirket" Association="Self.FK_Servis_Sirket">
+      <End Role="Sirket" EntitySet="Sirket" />
+      <End Role="Servis" EntitySet="Servis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServisDeneme_Deneme" Association="Self.FK_ServisDeneme_Deneme">
+      <End Role="Deneme" EntitySet="Deneme" />
+      <End Role="ServisDeneme" EntitySet="ServisDeneme" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServisDeneme_Servis" Association="Self.FK_ServisDeneme_Servis">
+      <End Role="Servis" EntitySet="Servis" />
+      <End Role="ServisDeneme" EntitySet="ServisDeneme" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServisEDergi_EDergi" Association="Self.FK_ServisEDergi_EDergi">
+      <End Role="EDergi" EntitySet="EDergi" />
+      <End Role="ServisEDergi" EntitySet="ServisEDergi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ServisEDergi_Servis" Association="Self.FK_ServisEDergi_Servis">
+      <End Role="Servis" EntitySet="Servis" />
+      <End Role="ServisEDergi" EntitySet="ServisEDergi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Siparis_aspnet_Users" Association="Self.FK_Siparis_aspnet_Users">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="Siparis" EntitySet="Siparis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Siparis_SiparisTip" Association="Self.FK_Siparis_SiparisTip">
+      <End Role="SiparisDurumTip" EntitySet="SiparisDurumTip" />
+      <End Role="Siparis" EntitySet="Siparis" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SiparisDeneme_Deneme" Association="Self.FK_SiparisDeneme_Deneme">
+      <End Role="Deneme" EntitySet="Deneme" />
+      <End Role="SiparisDeneme" EntitySet="SiparisDeneme" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SiparisDeneme_Siparis" Association="Self.FK_SiparisDeneme_Siparis">
+      <End Role="Siparis" EntitySet="Siparis" />
+      <End Role="SiparisDeneme" EntitySet="SiparisDeneme" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SiparisEDergi_EDergi" Association="Self.FK_SiparisEDergi_EDergi">
+      <End Role="EDergi" EntitySet="EDergi" />
+      <End Role="SiparisEDergi" EntitySet="SiparisEDergi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SiparisEDergi_Siparis" Association="Self.FK_SiparisEDergi_Siparis">
+      <End Role="Siparis" EntitySet="Siparis" />
+      <End Role="SiparisEDergi" EntitySet="SiparisEDergi" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sonuc_DenemeKullanici" Association="Self.FK_Sonuc_DenemeKullanici">
+      <End Role="DenemeKullanici" EntitySet="DenemeKullanici" />
+      <End Role="SonucDetay" EntitySet="SonucDetay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sonuc_Ders" Association="Self.FK_Sonuc_Ders">
+      <End Role="Ders" EntitySet="Ders" />
+      <End Role="SonucDetay" EntitySet="SonucDetay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SonucDetay_aspnet_Users" Association="Self.FK_SonucDetay_aspnet_Users">
+      <End Role="aspnet_Users" EntitySet="aspnet_Users" />
+      <End Role="SonucDetay" EntitySet="SonucDetay" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Soru_Deneme" Association="Self.FK_Soru_Deneme">
+      <End Role="Deneme" EntitySet="Deneme" />
+      <End Role="Soru" EntitySet="Soru" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tanitim_Bolge" Association="Self.FK_Tanitim_Bolge">
+      <End Role="BolgeTip" EntitySet="BolgeTip" />
+      <End Role="Tanitim" EntitySet="Tanitim" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
