@@ -1,4 +1,4 @@
-# OnlineExamPlatform-BiSinav
+# OnlineExamPlatform-Bisinav
 
 Made in 2014
 
