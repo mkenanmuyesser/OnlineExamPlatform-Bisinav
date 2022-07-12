@@ -1,8 +1,8 @@
-# OnlineExamPlatform
+# OnlineExamPlatform-BiSinav
 
 Made in 2014
 
-Please check .extra_files folder or github wiki part for detailed project information
+Please check .extra_files folder or github wiki part for detailed project information, screenshots and database files.
 
 The project is an online training and exam system solution. 
 
