@@ -14,4 +14,4 @@ Five in Fives (a type of exam where you can do 5 questions in 5 minutes), Live E
 
 Minran Kenan MÜYESSER
 mkenanmuyesser@hotmail.com
-https://www.linkedin.com/in/minran-kenan-müyesser
+https://www.linkedin.com/in/mkenanmuyesser
